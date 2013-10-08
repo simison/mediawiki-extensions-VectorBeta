@@ -40,7 +40,7 @@ class VectorBetaHooks {
 			if ( $index !== false ) {
 				array_splice( $modules, $index, 1 );
 			}
-			$modules[] = 'skins.vector-beta';
+			$modules[] = 'skins.vector.beta';
 		}
 
 		return true;
