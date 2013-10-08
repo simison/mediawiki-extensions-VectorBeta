@@ -21,14 +21,14 @@
 
 class VectorBetaHooks {
 	static function getPreferences( $user, &$prefs ) {
-		global $wgScriptPath;
+		global $wgExtensionAssetsPath;
 
 		$prefs['betafeatures-vector-typography-update'] = array(
 			'label-message' => 'vector-beta-feature-typography-message',
 			'desc-message' => 'vector-beta-feature-typography-description',
 			'info-link' => 'https://www.mediawiki.org/wiki/Wikimedia_Foundation_Design/Typography',
 			'discussion-link' => 'https://www.mediawiki.org/wiki/Talk:Wikimedia_Foundation_Design/Typography',
-			'screenshot' => $wgScriptPath . '/resources/mediawiki/images/typography-beta.svg',
+			'screenshot' => $wgExtensionAssetsPath . '/VectorBeta/typography-beta.svg',
 		);
 
 		return true;
