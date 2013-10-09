@@ -19,6 +19,14 @@
  * @ingroup extensions
  */
 
+$wgExtensionCredits['other'][] = array(
+	'author' => array( 'Jon Robson', 'Trevor Parscal' ),
+	'descriptionmsg' => 'vectorbeta-desc',
+	'name' => 'VectorBeta',
+	'path' => __FILE__,
+	'url' => 'https://www.mediawiki.org/wiki/Extension:VectorBeta',
+);
+
 $wgAutoloadClasses['VectorBetaHooks'] = __DIR__ . '/VectorBeta.hooks.php';
 
 $wgExtensionMessagesFiles['VectorBeta'] = __DIR__ . '/VectorBeta.i18n.php';

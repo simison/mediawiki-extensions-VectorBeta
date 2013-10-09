@@ -26,6 +26,7 @@ $messages = array();
  */
 $messages['en'] = array(
 	'vector-beta-feature-typography-message' => 'Typography refresh',
+	'vectorbeta-desc' => 'Typography refresh of the Vector skin using BetaFeatures',
 	'vector-beta-feature-typography-description' => 'Updates typography of the Vector skin to improve readability, accessibility and consistency.',
 );
 
@@ -35,4 +36,6 @@ $messages['en'] = array(
 $messages['qqq'] = array(
 	'vector-beta-feature-typography-message' => 'Name shown in user preferences for Vector typography beta feature experiment.',
 	'vector-beta-feature-typography-description' => 'Brief explanation of typography beta feature experiment.',
+	'vectorbeta-desc' => '{{desc|name=Vector Beta|url=https://www.mediawiki.org/wiki/Extension:VectorBeta}}',
+	'vector-beta-feature-typography-description' => 'Brief explanation of Vector typography beta feature experiment which updates/refreshes Vectors existing typography for first time since its launch.',
 );
