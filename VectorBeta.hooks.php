@@ -26,8 +26,8 @@ class VectorBetaHooks {
 		$prefs['betafeatures-vector-typography-update'] = array(
 			'label-message' => 'vector-beta-feature-typography-message',
 			'desc-message' => 'vector-beta-feature-typography-description',
-			'info-link' => 'https://www.mediawiki.org/wiki/Wikimedia_Foundation_Design/Typography',
-			'discussion-link' => 'https://www.mediawiki.org/wiki/Talk:Wikimedia_Foundation_Design/Typography',
+			'info-link' => 'https://www.mediawiki.org/wiki/Typography_Update',
+			'discussion-link' => 'https://www.mediawiki.org/wiki/Talk:Typography_Update',
 			'screenshot' => $wgExtensionAssetsPath . '/VectorBeta/typography-beta.svg',
 		);
 
