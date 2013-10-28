@@ -25,7 +25,7 @@ $messages = array();
  * English
  */
 $messages['en'] = array(
-	'vector-beta-feature-typography-message' => 'Vector typography refresh',
+	'vector-beta-feature-typography-message' => 'Typography refresh',
 	'vector-beta-feature-typography-description' => 'Updates typography of the Vector skin to improve readability, accessibility and consistency.',
 );
 
@@ -34,5 +34,5 @@ $messages['en'] = array(
  */
 $messages['qqq'] = array(
 	'vector-beta-feature-typography-message' => 'Name shown in user preferences for Vector typography beta feature experiment.',
-	'vector-beta-feature-typography-description' => 'Brief explanation of Vector typography beta feature experiment.',
+	'vector-beta-feature-typography-description' => 'Brief explanation of  typography beta feature experiment.',
 );
