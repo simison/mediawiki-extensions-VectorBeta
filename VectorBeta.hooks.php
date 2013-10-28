@@ -29,6 +29,9 @@ class VectorBetaHooks {
 			'info-link' => 'https://www.mediawiki.org/wiki/Typography_Update',
 			'discussion-link' => 'https://www.mediawiki.org/wiki/Talk:Typography_Update',
 			'screenshot' => $wgExtensionAssetsPath . '/VectorBeta/typography-beta.svg',
+			'requirements' => array(
+				'skins' => array( 'vector' ),
+			),
 		);
 
 		return true;
