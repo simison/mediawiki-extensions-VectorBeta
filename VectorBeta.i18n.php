@@ -34,5 +34,5 @@ $messages['en'] = array(
  */
 $messages['qqq'] = array(
 	'vector-beta-feature-typography-message' => 'Name shown in user preferences for Vector typography beta feature experiment.',
-	'vector-beta-feature-typography-description' => 'Brief explanation of  typography beta feature experiment.',
+	'vector-beta-feature-typography-description' => 'Brief explanation of typography beta feature experiment.',
 );
