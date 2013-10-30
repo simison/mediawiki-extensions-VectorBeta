@@ -37,15 +37,24 @@ class VectorBetaHooks {
 		return true;
 	}
 
+	/**
+	 * Handler for SkinVectorStyleModules
+	 * @param Skin $skin
+	 * @param array $modules
+	 * @return bool
+	 */
 	static function skinVectorStyleModules( $skin, &$modules ) {
-		if ( BetaFeatures::isFeatureEnabled( $skin->getUser(), 'betafeatures-vector-typography-update' ) ) {
+		if ( class_exists( 'BetaFeatures')
+			&& BetaFeatures::isFeatureEnabled( $skin->getUser(), 'betafeatures-vector-typography-update' )
+		) {
 			$index = array_search( 'skins.vector', $modules );
 			if ( $index !== false ) {
 				array_splice( $modules, $index, 1 );
 			}
 			$modules[] = 'skins.vector.beta';
+		} elseif ( !class_exists( 'BetaFeatures' ) ) {
+			wfDebugLog( 'VectorBeta', 'The BetaFeatures extension is not installed' );
 		}
-
 		return true;
 	}
 }
