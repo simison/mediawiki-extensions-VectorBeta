@@ -39,3 +39,12 @@ $messages['qqq'] = array(
 	'vectorbeta-desc' => '{{desc|name=Vector Beta|url=https://www.mediawiki.org/wiki/Extension:VectorBeta}}',
 	'vector-beta-feature-typography-description' => 'Brief explanation of Vector typography beta feature experiment which updates/refreshes Vectors existing typography for first time since its launch.',
 );
+
+/** German (Deutsch)
+ * @author Metalhead64
+ */
+$messages['de'] = array(
+	'vector-beta-feature-typography-message' => 'Typografieaktualisierung',
+	'vectorbeta-desc' => 'Typografieaktualisierung des Vector-Skins',
+	'vector-beta-feature-typography-description' => 'Aktualisiert die Typografie des Vector-Skins zur Verbesserung der Lesbarkeit, Barrierefreiheit und Konsistenz.',
+);
