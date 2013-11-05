@@ -30,14 +30,19 @@ $messages['en'] = array(
 	'vector-beta-feature-typography-description' => 'Updates typography of the Vector skin to improve readability, accessibility and consistency.',
 );
 
-/**
- * Message documentation (Message documentation)
+/** Message documentation (Message documentation)
  */
 $messages['qqq'] = array(
 	'vector-beta-feature-typography-message' => 'Name shown in user preferences for Vector typography beta feature experiment.',
-	'vector-beta-feature-typography-description' => 'Brief explanation of typography beta feature experiment.',
 	'vectorbeta-desc' => '{{desc|name=Vector Beta|url=https://www.mediawiki.org/wiki/Extension:VectorBeta}}',
 	'vector-beta-feature-typography-description' => 'Brief explanation of Vector typography beta feature experiment which updates/refreshes Vectors existing typography for first time since its launch.',
+);
+
+/** Chechen (нохчийн)
+ * @author Умар
+ */
+$messages['ce'] = array(
+	'vector-beta-feature-typography-message' => 'Кечъяр карлаяккхар',
 );
 
 /** German (Deutsch)
@@ -47,4 +52,67 @@ $messages['de'] = array(
 	'vector-beta-feature-typography-message' => 'Typografieaktualisierung',
 	'vectorbeta-desc' => 'Typografieaktualisierung des Vector-Skins',
 	'vector-beta-feature-typography-description' => 'Aktualisiert die Typografie des Vector-Skins zur Verbesserung der Lesbarkeit, Barrierefreiheit und Konsistenz.',
+);
+
+/** French (français)
+ * @author Gomoko
+ */
+$messages['fr'] = array(
+	'vector-beta-feature-typography-message' => 'Actualisation de la typographie',
+	'vectorbeta-desc' => 'Actualisation de la typographie de l’habillage Vector en utilisant les fonctionnalités bêta',
+	'vector-beta-feature-typography-description' => 'Mettre à jour la typographie de l’habillage Vector en améliorant la lisibilité, l’accessibilité et la cohérence.',
+);
+
+/** Hebrew (עברית)
+ * @author Amire80
+ */
+$messages['he'] = array(
+	'vector-beta-feature-typography-message' => 'רענון השימוש בגופנים',
+	'vectorbeta-desc' => 'רענון בשימוש בגופנים בעיצוב וקטור באמצעות אפשרויות בטא',
+	'vector-beta-feature-typography-description' => 'עדכון השימוש בגופנים (טיפוגרפיה) לשיפור בקריאוּת, בנגישות ובעקיבות.',
+);
+
+/** Italian (italiano)
+ * @author Beta16
+ */
+$messages['it'] = array(
+	'vector-beta-feature-typography-message' => 'Aggiornamenti tipografici',
+	'vectorbeta-desc' => 'Aggiornamenti tipografici della skin Vector con BetaFeatures',
+	'vector-beta-feature-typography-description' => "Aggiornamenti tipografici della skin Vector per migliorare la leggibilità, l'accessibilità e la consistenza.",
+);
+
+/** Japanese (日本語)
+ * @author Shirayuki
+ */
+$messages['ja'] = array(
+	'vector-beta-feature-typography-message' => '文字体裁の更新',
+	'vectorbeta-desc' => 'ベータ版機能を使用してベクター外装の文字体裁を更新する',
+	'vector-beta-feature-typography-description' => 'ベクター外装の文字体裁について、読みやすさ、アクセシビリティ、一貫性を改善します。',
+);
+
+/** Macedonian (македонски)
+ * @author Bjankuloski06
+ */
+$messages['mk'] = array(
+	'vector-beta-feature-typography-message' => 'Типографско освежување',
+	'vectorbeta-desc' => 'Типографско освежување на рувото „Векторско“ користејќи БетаФункции',
+	'vector-beta-feature-typography-description' => 'Ја надградува типографијата на рувото „Векторско“ за подобра читливост, пристапност и доследност во приказот',
+);
+
+/** Russian (русский)
+ * @author Okras
+ */
+$messages['ru'] = array(
+	'vector-beta-feature-typography-message' => 'Обновление оформления',
+	'vectorbeta-desc' => 'Обновление оформления темы «Векторное» с использованием бета-функционала',
+	'vector-beta-feature-typography-description' => 'Обновляет оформление темы «Векторное», чтобы улучшить читаемость, доступность и единообразие.',
+);
+
+/** Ukrainian (українська)
+ * @author Andriykopanytsia
+ */
+$messages['uk'] = array(
+	'vector-beta-feature-typography-message' => 'Оновити оформлення',
+	'vectorbeta-desc' => 'Оновлення оформлення теми «Векторна» з використанням бета-функціоналу',
+	'vector-beta-feature-typography-description' => 'Оновлює оформлення теми «Векторна», щоб покращити чіткість, доступність і однорідність',
 );
