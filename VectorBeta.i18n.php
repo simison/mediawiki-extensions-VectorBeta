@@ -67,9 +67,9 @@ $messages['fr'] = array(
  * @author Amire80
  */
 $messages['he'] = array(
-	'vector-beta-feature-typography-message' => 'רענון השימוש בגופנים',
-	'vectorbeta-desc' => 'רענון בשימוש בגופנים בעיצוב וקטור באמצעות אפשרויות בטא',
-	'vector-beta-feature-typography-description' => 'עדכון השימוש בגופנים (טיפוגרפיה) לשיפור בקריאוּת, בנגישות ובעקיבות.',
+	'vector-beta-feature-typography-message' => 'עדכון גופנים',
+	'vectorbeta-desc' => 'עדכון גופנים בעיצוב וקטור באמצעות אפשרויות בטא',
+	'vector-beta-feature-typography-description' => 'עדכון גופנים לשם שיפור בקריאוּת, בנגישות ובעקיבות.',
 );
 
 /** Italian (italiano)
@@ -88,6 +88,13 @@ $messages['ja'] = array(
 	'vector-beta-feature-typography-message' => '文字体裁の更新',
 	'vectorbeta-desc' => 'ベータ版機能を使用してベクター外装の文字体裁を更新する',
 	'vector-beta-feature-typography-description' => 'ベクター外装の文字体裁について、読みやすさ、アクセシビリティ、一貫性を改善します。',
+);
+
+/** Luxembourgish (Lëtzebuergesch)
+ * @author Robby
+ */
+$messages['lb'] = array(
+	'vector-beta-feature-typography-message' => 'Aktualisatioun vun der Typographie',
 );
 
 /** Macedonian (македонски)
