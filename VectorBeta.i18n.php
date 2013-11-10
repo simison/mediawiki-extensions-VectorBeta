@@ -54,6 +54,15 @@ $messages['de'] = array(
 	'vector-beta-feature-typography-description' => 'Aktualisiert die Typografie des Vector-Skins zur Verbesserung der Lesbarkeit, Barrierefreiheit und Konsistenz.',
 );
 
+/** Spanish (español)
+ * @author Fitoschido
+ */
+$messages['es'] = array(
+	'vector-beta-feature-typography-message' => 'Actualización tipográfica',
+	'vectorbeta-desc' => 'Actualización tipográfica de la piel Vector, usando BetaFeatures',
+	'vector-beta-feature-typography-description' => 'Actualiza la tipografía de la piel Vector para mejorar la legibilidad, la accesibilidad y la coherencia.',
+);
+
 /** French (français)
  * @author Gomoko
  */
