@@ -45,6 +45,13 @@ $messages['ce'] = array(
 	'vector-beta-feature-typography-message' => 'Кечъяр карлаяккхар',
 );
 
+/** Czech (čeština)
+ * @author Mormegil
+ */
+$messages['cs'] = array(
+	'vector-beta-feature-typography-description' => 'Aktualizuje typografii vzhledu Vektor pro vylepšení čitelnosti, přístupnosti a konzistence.',
+);
+
 /** German (Deutsch)
  * @author Metalhead64
  */
