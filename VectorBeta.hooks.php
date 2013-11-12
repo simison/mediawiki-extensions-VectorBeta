@@ -23,12 +23,22 @@ class VectorBetaHooks {
 	static function getPreferences( $user, &$prefs ) {
 		global $wgExtensionAssetsPath;
 
+		$screenshotFileName = '/VectorBeta/typography-beta.svg';
+		$language = RequestContext::getMain()->getLanguage();
+		if ( $language->isRtl() ) {
+			if ( in_array( $language->getCode(), array( 'he', 'yi' ) ) ) {
+				$screenshotFileName = '/VectorBeta/typography-beta-hebr.svg';
+			} else {
+				$screenshotFileName = '/VectorBeta/typography-beta-arab.svg';
+			}
+		}
+
 		$prefs['betafeatures-vector-typography-update'] = array(
 			'label-message' => 'vector-beta-feature-typography-message',
 			'desc-message' => 'vector-beta-feature-typography-description',
 			'info-link' => 'https://www.mediawiki.org/wiki/Typography_Update',
 			'discussion-link' => 'https://www.mediawiki.org/wiki/Talk:Typography_Update',
-			'screenshot' => $wgExtensionAssetsPath . '/VectorBeta/typography-beta.svg',
+			'screenshot' => $wgExtensionAssetsPath . $screenshotFileName,
 			'requirements' => array(
 				'skins' => array( 'vector' ),
 			),
