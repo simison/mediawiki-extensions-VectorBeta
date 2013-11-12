@@ -79,6 +79,15 @@ $messages['fr'] = array(
 	'vector-beta-feature-typography-description' => 'Mettre à jour la typographie de l’habillage Vector en améliorant la lisibilité, l’accessibilité et la cohérence.',
 );
 
+/** Galician (galego)
+ * @author Toliño
+ */
+$messages['gl'] = array(
+	'vector-beta-feature-typography-message' => 'Actualización tipográfica',
+	'vectorbeta-desc' => 'Actualización tipográfica da aparencia Vector mediante as características experimentais',
+	'vector-beta-feature-typography-description' => 'Actualiza a tipografía da aparencia Vector para mellorar a lectura, o acceso e a coherencia.',
+);
+
 /** Hebrew (עברית)
  * @author Amire80
  */
