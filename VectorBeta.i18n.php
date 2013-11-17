@@ -115,11 +115,22 @@ $messages['ja'] = array(
 	'vector-beta-feature-typography-description' => 'ベクター外装の文字体裁について、読みやすさ、アクセシビリティ、一貫性を改善します。',
 );
 
+/** Korean (한국어)
+ * @author 아라
+ */
+$messages['ko'] = array(
+	'vector-beta-feature-typography-message' => '타이포그래피 새로 고침',
+	'vectorbeta-desc' => '베타기능을 사용하여 벡터 스킨의 타이포그래피를 새로 고칩니다',
+	'vector-beta-feature-typography-description' => '가독성, 접근성과 일관성을 개선하기 위해 벡터 스킨의 타이포그래피를 업데이트합니다.',
+);
+
 /** Luxembourgish (Lëtzebuergesch)
  * @author Robby
  */
 $messages['lb'] = array(
 	'vector-beta-feature-typography-message' => 'Aktualisatioun vun der Typographie',
+	'vectorbeta-desc' => 'Typographesch Opfrëschung vum Vector Ausgesinn duerch Beta-Funktiounen',
+	'vector-beta-feature-typography-description' => "Aktualiséiert d'Typographie vum Vector-Ausgesinn fir d'Liesbarkeet, D'Accessibilitéit an d'Konsistenz ze verbesseren.",
 );
 
 /** Macedonian (македонски)
