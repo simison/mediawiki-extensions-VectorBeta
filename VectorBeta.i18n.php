@@ -49,6 +49,8 @@ $messages['ce'] = array(
  * @author Mormegil
  */
 $messages['cs'] = array(
+	'vector-beta-feature-typography-message' => 'Oživení typografie',
+	'vectorbeta-desc' => 'Typografické oživení vzhledu Vektor v rámci betaverze',
 	'vector-beta-feature-typography-description' => 'Aktualizuje typografii vzhledu Vektor pro vylepšení čitelnosti, přístupnosti a konzistence.',
 );
 
