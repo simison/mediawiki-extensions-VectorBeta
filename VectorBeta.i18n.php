@@ -38,6 +38,15 @@ $messages['qqq'] = array(
 	'vector-beta-feature-typography-description' => 'Brief explanation of Vector typography beta feature experiment which updates/refreshes Vectors existing typography for first time since its launch.',
 );
 
+/** Asturian (asturianu)
+ * @author Xuacu
+ */
+$messages['ast'] = array(
+	'vector-beta-feature-typography-message' => 'Actualización tipográfica',
+	'vectorbeta-desc' => 'Actualización tipográfica de la piel Vector usando les carauterístiques Beta',
+	'vector-beta-feature-typography-description' => "Actualiza la tipografía de la piel Vector p'ameyorar la lleibilidá, accesibilidá y consistencia.",
+);
+
 /** Chechen (нохчийн)
  * @author Умар
  */
