@@ -170,3 +170,12 @@ $messages['uk'] = array(
 	'vectorbeta-desc' => 'Оновлення оформлення теми «Векторна» з використанням бета-функціоналу',
 	'vector-beta-feature-typography-description' => 'Оновлює оформлення теми «Векторна», щоб покращити чіткість, доступність і однорідність',
 );
+
+/** Vietnamese (Tiếng Việt)
+ * @author Minh Nguyen
+ */
+$messages['vi'] = array(
+	'vector-beta-feature-typography-message' => 'Làm mới phông chữ',
+	'vectorbeta-desc' => 'Làm mới các phông chữ trong hình dạng Vectơ dùng hệ thống Tính năng beta',
+	'vector-beta-feature-typography-description' => 'Làm mới các phông chữ trong hình dạng Vectơ để tăng tốc đọc hiểu, trợ năng, và tính nhất quán.',
+);
