@@ -47,6 +47,14 @@ $messages['ast'] = array(
 	'vector-beta-feature-typography-description' => "Actualiza la tipografía de la piel Vector p'ameyorar la lleibilidá, accesibilidá y consistencia.",
 );
 
+/** Bengali (বাংলা)
+ * @author Aftab1995
+ */
+$messages['bn'] = array(
+	'vector-beta-feature-typography-message' => 'লেখনী পুনঃসতেজকরণ',
+	'vector-beta-feature-typography-description' => 'পাঠযোগ্যতা, অভিগম্যতা এবং দৃঢ়তা উন্নত করতে ভেক্টর আবরণে টাইপোগ্রাফি হালনাগাদ করে।',
+);
+
 /** Chechen (нохчийн)
  * @author Умар
  */
@@ -108,6 +116,14 @@ $messages['he'] = array(
 	'vector-beta-feature-typography-description' => 'עדכון גופנים לשם שיפור בקריאוּת, בנגישות ובעקיבות.',
 );
 
+/** Croatian (hrvatski)
+ * @author MaGa
+ */
+$messages['hr'] = array(
+	'vector-beta-feature-typography-message' => 'Osvježena tipografija',
+	'vector-beta-feature-typography-description' => 'Nadogradnja tipografije Vector izgleda u svhru poboljšanja čitljivosti, pristupačnosti i skladnosti.',
+);
+
 /** Italian (italiano)
  * @author Beta16
  */
@@ -153,6 +169,24 @@ $messages['mk'] = array(
 	'vector-beta-feature-typography-description' => 'Ја надградува типографијата на рувото „Векторско“ за подобра читливост, пристапност и доследност во приказот',
 );
 
+/** Malayalam (മലയാളം)
+ * @author Praveenp
+ */
+$messages['ml'] = array(
+	'vector-beta-feature-typography-message' => 'അക്ഷരരൂപം പുതുക്കൽ',
+	'vectorbeta-desc' => 'വെക്റ്റർ ദൃശ്യരൂപത്തിൽ ബീറ്റാസൗകര്യങ്ങൾ ഉപയോഗിച്ചുള്ള അക്ഷരരൂപം പുതുക്കൽ',
+	'vector-beta-feature-typography-description' => 'വായനാസൗകര്യവും, അഭിഗമ്യതയും, സ്ഥിരതയും മെച്ചപ്പെടുത്തുന്നതിനായി വെക്റ്റർ ദൃശ്യരൂപത്തിലെ അക്ഷരരൂപങ്ങൾ പുതുക്കുന്നു.',
+);
+
+/** Romanian (română)
+ * @author Minisarm
+ */
+$messages['ro'] = array(
+	'vector-beta-feature-typography-message' => 'Reîmprospătarea interfeței tipografice',
+	'vectorbeta-desc' => 'Reîmprospătarea interfeței tipografie a temei Vector folosind funcțiile beta',
+	'vector-beta-feature-typography-description' => 'Actualizează interfața tipografică a temei Vector pentru a îmbunătăți lizibilitatea, accesibilitatea și coerența.',
+);
+
 /** Russian (русский)
  * @author Okras
  */
@@ -178,4 +212,13 @@ $messages['vi'] = array(
 	'vector-beta-feature-typography-message' => 'Làm mới phông chữ',
 	'vectorbeta-desc' => 'Làm mới các phông chữ trong hình dạng Vectơ dùng hệ thống Tính năng beta',
 	'vector-beta-feature-typography-description' => 'Làm mới các phông chữ trong hình dạng Vectơ để tăng tốc đọc hiểu, trợ năng, và tính nhất quán.',
+);
+
+/** Simplified Chinese (中文（简体）‎)
+ * @author Shizhao
+ */
+$messages['zh-hans'] = array(
+	'vector-beta-feature-typography-message' => '排版刷新',
+	'vectorbeta-desc' => '用于测试功能的Vector皮肤排版刷新',
+	'vector-beta-feature-typography-description' => '更新Vector皮肤的排版，以改善可读性、可访问性以及一致性',
 );
