@@ -121,7 +121,16 @@ $messages['he'] = array(
  */
 $messages['hr'] = array(
 	'vector-beta-feature-typography-message' => 'Osvježena tipografija',
-	'vector-beta-feature-typography-description' => 'Nadogradnja tipografije Vector izgleda u svhru poboljšanja čitljivosti, pristupačnosti i skladnosti.',
+	'vector-beta-feature-typography-description' => 'Nadogradnja tipografije Vector izgleda u svrhu poboljšanja čitljivosti, pristupačnosti i skladnosti.',
+);
+
+/** Indonesian (Bahasa Indonesia)
+ * @author William Surya Permana
+ */
+$messages['id'] = array(
+	'vector-beta-feature-typography-message' => 'Penyegaran tipografi',
+	'vectorbeta-desc' => 'Penyegaran tipografi untuk kulit Vektor menggunakan Fitur Beta',
+	'vector-beta-feature-typography-description' => 'Mengubah tipografi kulit vektor untuk meningkatkan keterbacaan, aksesibilitas dan konsistensi.',
 );
 
 /** Italian (italiano)
@@ -176,6 +185,15 @@ $messages['ml'] = array(
 	'vector-beta-feature-typography-message' => 'അക്ഷരരൂപം പുതുക്കൽ',
 	'vectorbeta-desc' => 'വെക്റ്റർ ദൃശ്യരൂപത്തിൽ ബീറ്റാസൗകര്യങ്ങൾ ഉപയോഗിച്ചുള്ള അക്ഷരരൂപം പുതുക്കൽ',
 	'vector-beta-feature-typography-description' => 'വായനാസൗകര്യവും, അഭിഗമ്യതയും, സ്ഥിരതയും മെച്ചപ്പെടുത്തുന്നതിനായി വെക്റ്റർ ദൃശ്യരൂപത്തിലെ അക്ഷരരൂപങ്ങൾ പുതുക്കുന്നു.',
+);
+
+/** Portuguese (português)
+ * @author Vitorvicentevalente
+ */
+$messages['pt'] = array(
+	'vector-beta-feature-typography-message' => 'Actualização tipográfica',
+	'vectorbeta-desc' => 'Actualização tipográfica do tema Vector utilizando os Recursos Beta',
+	'vector-beta-feature-typography-description' => 'Actualiza a tipografia do tema Vector para melhorar a legibilidade, acessibilidade e consistência.',
 );
 
 /** Romanian (română)
