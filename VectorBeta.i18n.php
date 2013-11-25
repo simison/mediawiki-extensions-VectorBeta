@@ -89,6 +89,15 @@ $messages['es'] = array(
 	'vector-beta-feature-typography-description' => 'Actualiza la tipografía de la piel Vector para mejorar la legibilidad, la accesibilidad y la coherencia.',
 );
 
+/** Finnish (suomi)
+ * @author Stryn
+ */
+$messages['fi'] = array(
+	'vector-beta-feature-typography-message' => 'Typografiapäivitys',
+	'vectorbeta-desc' => 'Beeta-ominaisuuksien Vector-ulkoasun typografiapäivitys',
+	'vector-beta-feature-typography-description' => 'Päivittää Vector-ulkoasun typografian parantaen luettavuutta, saatavuutta sekä johdonmukaisuutta.',
+);
+
 /** French (français)
  * @author Gomoko
  */
@@ -212,6 +221,15 @@ $messages['ru'] = array(
 	'vector-beta-feature-typography-message' => 'Обновление оформления',
 	'vectorbeta-desc' => 'Обновление оформления темы «Векторное» с использованием бета-функционала',
 	'vector-beta-feature-typography-description' => 'Обновляет оформление темы «Векторное», чтобы улучшить читаемость, доступность и единообразие.',
+);
+
+/** Turkish (Türkçe)
+ * @author Meelo
+ */
+$messages['tr'] = array(
+	'vector-beta-feature-typography-message' => 'Baskı (tipografi) yenileme',
+	'vectorbeta-desc' => 'Beta Özellikle kullanarak Vector görünümünde "Baski (tipografi) yenileme" kullanma',
+	'vector-beta-feature-typography-description' => 'Okunabilirliği, erişilebilirliği ve tutarlılığı artırmak için Vector görünümüne "Baskı (tipografi) yenileme" yükleyin.',
 );
 
 /** Ukrainian (українська)
