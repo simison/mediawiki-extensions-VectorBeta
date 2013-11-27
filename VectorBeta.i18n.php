@@ -60,6 +60,7 @@ $messages['bn'] = array(
  */
 $messages['ce'] = array(
 	'vector-beta-feature-typography-message' => 'Кечъяр карлаяккхар',
+	'vector-beta-feature-typography-description' => 'Еша а хьажа а атта хилийта «Векторан» теман кечдар карладоккху.',
 );
 
 /** Czech (čeština)
