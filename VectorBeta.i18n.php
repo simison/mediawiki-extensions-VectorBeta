@@ -90,6 +90,15 @@ $messages['es'] = array(
 	'vector-beta-feature-typography-description' => 'Actualiza la tipografía de la piel Vector para mejorar la legibilidad, la accesibilidad y la coherencia.',
 );
 
+/** Persian (فارسی)
+ * @author Reza1615
+ */
+$messages['fa'] = array(
+	'vector-beta-feature-typography-message' => 'به‌روزرسانی صفحه‌بندی',
+	'vectorbeta-desc' => 'استفاده از ویژگی‌های آزمایشی برای به‌روز رسانی صفحه‌بندی',
+	'vector-beta-feature-typography-description' => 'به‌روزرسانی صفحه‌بندی پوسته وکتور برای بهبود خوانائی، دسترسی و پایایی.',
+);
+
 /** Finnish (suomi)
  * @author Stryn
  */
