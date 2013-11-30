@@ -81,6 +81,15 @@ $messages['de'] = array(
 	'vector-beta-feature-typography-description' => 'Aktualisiert die Typografie des Vector-Skins zur Verbesserung der Lesbarkeit, Barrierefreiheit und Konsistenz.',
 );
 
+/** Lower Sorbian (dolnoserbski)
+ * @author Michawiki
+ */
+$messages['dsb'] = array(
+	'vector-beta-feature-typography-message' => 'Typografijowa aktualizacija',
+	'vectorbeta-desc' => 'Typografijowa aktualizacija drastwy Vector z pomocu betafunkcijami',
+	'vector-beta-feature-typography-description' => 'Aktualizěrujo typografiju drastwy Vector, aby cytajobnosć, bźezbariernosć a konsistencu pólěpšył.',
+);
+
 /** Spanish (español)
  * @author Fitoschido
  */
@@ -141,6 +150,15 @@ $messages['he'] = array(
 $messages['hr'] = array(
 	'vector-beta-feature-typography-message' => 'Osvježena tipografija',
 	'vector-beta-feature-typography-description' => 'Nadogradnja tipografije Vector izgleda u svrhu poboljšanja čitljivosti, pristupačnosti i skladnosti.',
+);
+
+/** Upper Sorbian (hornjoserbsce)
+ * @author Michawiki
+ */
+$messages['hsb'] = array(
+	'vector-beta-feature-typography-message' => 'Typografijowa aktualizacija',
+	'vectorbeta-desc' => 'Typografijowa aktualizacija drasty Vector z pomocu betafunkcijemi',
+	'vector-beta-feature-typography-description' => 'Aktualizuje typografiju drasty Vector, zo by čitajomnosć, bjezbarjernosć a konsistencu polěpšił.',
 );
 
 /** Indonesian (Bahasa Indonesia)
