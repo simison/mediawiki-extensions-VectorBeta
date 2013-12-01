@@ -55,6 +55,14 @@ $messages['bn'] = array(
 	'vector-beta-feature-typography-description' => 'পাঠযোগ্যতা, অভিগম্যতা এবং দৃঢ়তা উন্নত করতে ভেক্টর আবরণে টাইপোগ্রাফি হালনাগাদ করে।',
 );
 
+/** Catalan (català)
+ * @author Fitoschido
+ */
+$messages['ca'] = array(
+	'vector-beta-feature-typography-message' => 'Actualització tipogràfica',
+	'vectorbeta-desc' => 'Actualització tipogràfica de la aparença Vector mitjaçant BetaFeatures',
+);
+
 /** Chechen (нохчийн)
  * @author Умар
  */
