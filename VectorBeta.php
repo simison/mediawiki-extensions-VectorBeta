@@ -19,6 +19,9 @@
  * @ingroup extensions
  */
 
+$localBasePath = dirname( __DIR__ ) . '/VectorBeta';
+$remoteExtPath = 'VectorBeta';
+
 $wgExtensionCredits['other'][] = array(
 	'author' => array( 'Jon Robson', 'Trevor Parscal' ),
 	'descriptionmsg' => 'vectorbeta-desc',
@@ -26,6 +29,16 @@ $wgExtensionCredits['other'][] = array(
 	'path' => __FILE__,
 	'url' => 'https://www.mediawiki.org/wiki/Extension:VectorBeta',
 );
+
+$wgResourceModules = array_merge( $wgResourceModules, array(
+	'skins.vector.beta' => array(
+		'styles' => array(
+			'less/styles.less',
+		),
+		'remoteBasePath' => $remoteExtPath,
+		'localBasePath' => $localBasePath,
+	),
+) );
 
 $wgAutoloadClasses['VectorBetaHooks'] = __DIR__ . '/VectorBeta.hooks.php';
 
