@@ -23,12 +23,17 @@ $localBasePath = dirname( __DIR__ ) . '/VectorBeta';
 $remoteExtPath = 'VectorBeta';
 
 $wgExtensionCredits['betafeatures'][] = array(
-	'author' => array( 'Jon Robson', 'Trevor Parscal' ),
+	'author' => array( 'Jon Robson', 'Trevor Parscal', 'Juliusz Gonera' ),
 	'descriptionmsg' => 'vectorbeta-desc',
 	'name' => 'VectorBeta',
 	'path' => __FILE__,
 	'url' => 'https://www.mediawiki.org/wiki/Extension:VectorBeta',
 );
+
+/**
+ * Enable Compact Personal Bar.
+ */
+$wgVectorBetaPersonalBar = false;
 
 $wgResourceModules = array_merge( $wgResourceModules, array(
 	'skins.vector.beta' => array(
@@ -44,5 +49,28 @@ $wgAutoloadClasses['VectorBetaHooks'] = __DIR__ . '/VectorBeta.hooks.php';
 
 $wgExtensionMessagesFiles['VectorBeta'] = __DIR__ . '/VectorBeta.i18n.php';
 
+$wgVBResourceBoilerplate = array(
+	'localBasePath' =>  __DIR__,
+	'remoteExtPath' => 'VectorBeta',
+);
+
+$wgResourceModules['skins.vector.compactPersonalBar'] = $wgVBResourceBoilerplate + array(
+	'styles' => array(
+		'resources/compactPersonalBar/compactPersonalBar.less',
+	),
+	'scripts' => array(
+		'resources/compactPersonalBar/compactPersonalBar.js',
+	),
+	'messages' => array(
+		'notifications',
+		'privacy',
+		'privacypage',
+		'help',
+		'helppage',
+	),
+	'position' => 'top',
+);
+
 $wgHooks['GetBetaFeaturePreferences'][] = 'VectorBetaHooks::getPreferences';
 $wgHooks['SkinVectorStyleModules'][] = 'VectorBetaHooks::skinVectorStyleModules';
+$wgHooks['BeforePageDisplay'][] = 'VectorBetaHooks::onBeforePageDisplay';

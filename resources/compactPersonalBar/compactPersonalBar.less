@@ -1,0 +1,100 @@
+@import "mediawiki.mixins";
+
+@fadeDuration: .2s;
+@fadeDelay: .1s;
+
+#p-personal {
+	ul {
+		// FIXME: overrides for Vector styles
+		padding: 0;
+	}
+
+	#pt-flyout {
+		// FIXME: overrides for Vector styles
+		margin-top: .1em;
+
+		padding: 0 .2em;
+		border: 1px solid #ccc;
+		border-radius: 3px;
+
+		.transition(0s (@fadeDuration + @fadeDelay));
+
+		&:hover {
+			border-color: #aaa;
+			background: #fff;
+
+			.transition(background @fadeDuration @fadeDelay, border-color @fadeDuration @fadeDelay;);
+		}
+
+		li {
+			// FIXME: overrides for Vector styles
+			float: none;
+			font-size: 1em;
+			margin: 0;
+			padding: 0 !important;
+			background: none;
+
+			a {
+				display: block;
+				padding: .4em (.6em + 1.2em) .4em .6em;
+				border-radius: 2px;
+				color: #000;
+				text-decoration: none;
+			}
+		}
+
+		// more widely supported than li:not(:first-child)
+		li:first-child ~ li {
+			// can't use display: none because it's not animatable
+			max-height: 0;
+			visibility: none;
+			opacity: 0;
+			overflow: hidden;
+
+			// needed for the transition to work properly, see also :hover
+			&.group-start {
+				border-top: 0 solid #ededed;
+			}
+
+			.transition(0s (@fadeDuration + @fadeDelay));
+
+			a {
+				margin: .2em 0;
+
+				span {
+					display: inline-block;
+					float: right;
+					width: 1.6em;
+					padding: .2em 0;
+					margin: -.2em -1.6em 0 0;
+					text-align: center;
+					font-weight: bold;
+					color: #aaa;
+					border-radius: 3px;
+				}
+
+				&:hover {
+					background: #4c85fb;
+					color: #fff;
+
+					span {
+						background: #4477e1;
+						color: #fff;
+					}
+				}
+			}
+		}
+
+		&:hover li:first-child ~ li {
+			max-height: 9999px;
+			visibility: visible;
+			opacity: 1;
+
+			&.group-start {
+				border-top-width: 1px;
+			}
+
+			.transition(border-top 0s @fadeDelay, max-height 0s @fadeDelay, opacity @fadeDuration @fadeDelay;);
+		}
+	}
+}

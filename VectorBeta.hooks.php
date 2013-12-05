@@ -21,10 +21,11 @@
 
 class VectorBetaHooks {
 	static function getPreferences( $user, &$prefs ) {
-		global $wgExtensionAssetsPath;
+		global $wgExtensionAssetsPath, $wgVectorBetaPersonalBar;
 
 		$screenshotFileName = '/VectorBeta/typography-beta.svg';
 		$language = RequestContext::getMain()->getLanguage();
+		$dir = $language->getDir();
 		if ( $language->isRtl() ) {
 			if ( in_array( $language->getCode(), array( 'he', 'yi' ) ) ) {
 				$screenshotFileName = '/VectorBeta/typography-beta-hebr.svg';
@@ -43,6 +44,19 @@ class VectorBetaHooks {
 				'skins' => array( 'vector' ),
 			),
 		);
+
+		if ( $wgVectorBetaPersonalBar ) {
+			$prefs['betafeatures-vector-compact-personal-bar'] = array(
+				'label-message' => 'vector-beta-feature-compact-personal-bar-message',
+				'desc-message' => 'vector-beta-feature-compact-personal-bar-description',
+				'info-link' => 'https://www.mediawiki.org/wiki/Compact_Personal_Bar',
+				'discussion-link' => 'https://www.mediawiki.org/wiki/Talk:Compact_Personal_Bar',
+				'screenshot' => "$wgExtensionAssetsPath/VectorBeta/compactPersonalBar-$dir.svg",
+				'requirements' => array(
+					'skins' => array( 'vector' ),
+				),
+			);
+		}
 
 		return true;
 	}
@@ -65,6 +79,28 @@ class VectorBetaHooks {
 		} elseif ( !class_exists( 'BetaFeatures' ) ) {
 			wfDebugLog( 'VectorBeta', 'The BetaFeatures extension is not installed' );
 		}
+		return true;
+	}
+
+	/**
+	 * Handler for BeforePageDisplay
+	 * @param OutputPage $out
+	 * @param Skin $skin
+	 * @return bool
+	 */
+	static function onBeforePageDisplay( &$out, &$skin ) {
+		if (
+			class_exists( 'BetaFeatures' ) &&
+			BetaFeatures::isFeatureEnabled( $out->getSkin()->getUser(), 'betafeatures-vector-compact-personal-bar' )
+		) {
+
+			$out->addModules( array(
+				'skins.vector.compactPersonalBar',
+			) );
+		} elseif ( !class_exists( 'BetaFeatures' ) ) {
+			wfDebugLog( 'VectorBeta', 'The BetaFeatures extension is not installed' );
+		}
+
 		return true;
 	}
 }
