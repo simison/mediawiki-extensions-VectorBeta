@@ -89,6 +89,13 @@ $messages['de'] = array(
 	'vector-beta-feature-typography-description' => 'Aktualisiert die Typografie des Vector-Skins zur Verbesserung der Lesbarkeit, Barrierefreiheit und Konsistenz.',
 );
 
+/** Zazaki (Zazaki)
+ * @author Marmase
+ */
+$messages['diq'] = array(
+	'vector-beta-feature-typography-message' => 'Topografiya newe kerden',
+);
+
 /** Lower Sorbian (dolnoserbski)
  * @author Michawiki
  */
@@ -230,6 +237,15 @@ $messages['ml'] = array(
 	'vector-beta-feature-typography-message' => 'അക്ഷരരൂപം പുതുക്കൽ',
 	'vectorbeta-desc' => 'വെക്റ്റർ ദൃശ്യരൂപത്തിൽ ബീറ്റാസൗകര്യങ്ങൾ ഉപയോഗിച്ചുള്ള അക്ഷരരൂപം പുതുക്കൽ',
 	'vector-beta-feature-typography-description' => 'വായനാസൗകര്യവും, അഭിഗമ്യതയും, സ്ഥിരതയും മെച്ചപ്പെടുത്തുന്നതിനായി വെക്റ്റർ ദൃശ്യരൂപത്തിലെ അക്ഷരരൂപങ്ങൾ പുതുക്കുന്നു.',
+);
+
+/** Dutch (Nederlands)
+ * @author Siebrand
+ */
+$messages['nl'] = array(
+	'vector-beta-feature-typography-message' => 'Typografievernieuwing',
+	'vectorbeta-desc' => 'Typografievernieuwing van de vormgeving Vector via Betafuncties',
+	'vector-beta-feature-typography-description' => 'Werkt de typografie van het uiterlijk Vector bij om de leesbaarheid, toegankelijkheid en consistentie te verbeteren.',
 );
 
 /** Portuguese (português)
