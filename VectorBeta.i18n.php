@@ -304,9 +304,10 @@ $messages['vi'] = array(
 
 /** Simplified Chinese (中文（简体）‎)
  * @author Shizhao
+ * @author Xiaomingyan
  */
 $messages['zh-hans'] = array(
-	'vector-beta-feature-typography-message' => '排版刷新',
-	'vectorbeta-desc' => '用于测试功能的Vector皮肤排版刷新',
-	'vector-beta-feature-typography-description' => '更新Vector皮肤的排版，以改善可读性、可访问性以及一致性',
+	'vector-beta-feature-typography-message' => '排版样式更新',
+	'vectorbeta-desc' => '进行功能测试的Vector皮肤排版样式更新',
+	'vector-beta-feature-typography-description' => '更新Vector皮肤的排版样式，使其易读、易用、样式一致。',
 );
