@@ -81,11 +81,12 @@ $messages['cs'] = array(
 );
 
 /** German (Deutsch)
+ * @author Kghbln
  * @author Metalhead64
  */
 $messages['de'] = array(
 	'vector-beta-feature-typography-message' => 'Typografieaktualisierung',
-	'vectorbeta-desc' => 'Typografieaktualisierung des Vector-Skins',
+	'vectorbeta-desc' => 'Ermöglicht bei der Benutzeroberfläche „Vector“ Schriftartänderungen',
 	'vector-beta-feature-typography-description' => 'Aktualisiert die Typografie des Vector-Skins zur Verbesserung der Lesbarkeit, Barrierefreiheit und Konsistenz.',
 );
 
