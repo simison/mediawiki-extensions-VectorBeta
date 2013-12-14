@@ -249,6 +249,13 @@ $messages['nl'] = array(
 	'vector-beta-feature-typography-description' => 'Werkt de typografie van het uiterlijk Vector bij om de leesbaarheid, toegankelijkheid en consistentie te verbeteren.',
 );
 
+/** Polish (polski)
+ * @author Tar Lócesilion
+ */
+$messages['pl'] = array(
+	'vector-beta-feature-typography-description' => 'Unowocześnia typografię skórki Vector w celu poprawy czytelności, dostępności www oraz spójności tekstu czytanego z komputera i urządzenia mobilnego.',
+);
+
 /** Portuguese (português)
  * @author Vitorvicentevalente
  */
