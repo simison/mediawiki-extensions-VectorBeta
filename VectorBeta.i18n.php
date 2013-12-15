@@ -108,11 +108,12 @@ $messages['dsb'] = array(
 
 /** Spanish (español)
  * @author Fitoschido
+ * @author Vivaelcelta
  */
 $messages['es'] = array(
 	'vector-beta-feature-typography-message' => 'Actualización tipográfica',
 	'vectorbeta-desc' => 'Actualización tipográfica de la piel Vector, usando BetaFeatures',
-	'vector-beta-feature-typography-description' => 'Actualiza la tipografía de la piel Vector para mejorar la legibilidad, la accesibilidad y la coherencia.',
+	'vector-beta-feature-typography-description' => 'Actualiza la tipografía de la apariencia Vector para mejorar la lectura, la accesibilidad y la coherencia.',
 );
 
 /** Persian (فارسی)
