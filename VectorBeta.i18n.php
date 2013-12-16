@@ -90,6 +90,13 @@ $messages['de'] = array(
 	'vector-beta-feature-typography-description' => 'Aktualisiert die Typografie des Vector-Skins zur Verbesserung der Lesbarkeit, Barrierefreiheit und Konsistenz.',
 );
 
+/** Swiss High German (Schweizer Hochdeutsch)
+ * @author Filzstift
+ */
+$messages['de-ch'] = array(
+	'vectorbeta-desc' => 'Ermöglicht bei der Benutzeroberfläche «Vector» Schriftartänderungen',
+);
+
 /** Zazaki (Zazaki)
  * @author Marmase
  */
