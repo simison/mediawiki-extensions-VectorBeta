@@ -57,7 +57,7 @@ class VectorBetaHooks {
 		if ( class_exists( 'BetaFeatures')
 			&& BetaFeatures::isFeatureEnabled( $skin->getUser(), 'betafeatures-vector-typography-update' )
 		) {
-			$index = array_search( 'skins.vector', $modules );
+			$index = array_search( 'skins.vector.styles', $modules );
 			if ( $index !== false ) {
 				array_splice( $modules, $index, 1 );
 			}

@@ -1,0 +1,88 @@
+blockquote {
+	font-family: @content-heading-font-family;
+	font-size: 1.2em;
+	font-style: italic;
+}
+
+
+#bodyContent {
+	max-width: 715px;
+}
+
+/* Content */
+div#content {
+	line-height: 1.5em;
+	.mw-editsection {
+		font-family: @content-font-family;
+	}
+
+	p {
+		line-height: inherit;
+	}
+
+	h1,
+	#firstHeading {
+		font-family: @content-heading-font-family;
+		font-size: 1.833em;
+		line-height: 22pt;
+		padding: 0;
+		margin-bottom: 4pt;
+	}
+
+	h2 {
+		font-size: 1.5em;
+		line-height: 22pt;
+		margin-top: 16pt;
+	}
+
+	h2 {
+		font-family: @content-heading-font-family;
+		padding: 0;
+		margin-bottom: 4pt;
+	}
+
+	h3,
+	h4,
+	h5,
+	h6 {
+		margin-top: 14pt;
+	}
+
+	h3 {
+		font-size: 1.17em;
+		line-height: 22pt;
+	}
+
+	h3,
+	h4 {
+		font-weight: bold;
+	}
+
+	h4,
+	h5,
+	h6 {
+		font-size: 100%; /* (reset) */
+	}
+
+	h6 {
+		font-style: italic;
+	}
+
+	p {
+		margin-bottom: 8pt;
+	}
+
+	// FIXME: this is hacky
+	#toc h2 {
+		font-size: 100%;
+	}
+}
+
+// External links
+.external {
+	background-position: center right;
+	background-repeat: no-repeat;
+	.background-image('images/external-link-ltr-icon.png');
+	padding-right: 13px;
+}
+
