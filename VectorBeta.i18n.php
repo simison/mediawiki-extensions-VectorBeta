@@ -119,7 +119,7 @@ $messages['dsb'] = array(
  */
 $messages['es'] = array(
 	'vector-beta-feature-typography-message' => 'Actualización tipográfica',
-	'vectorbeta-desc' => 'Actualización tipográfica de la piel Vector, usando BetaFeatures',
+	'vectorbeta-desc' => 'Actualización tipográfica de la apariencia Vector usando caraterísticas experimentales (BetaFeatures)',
 	'vector-beta-feature-typography-description' => 'Actualiza la tipografía de la apariencia Vector para mejorar la lectura, la accesibilidad y la coherencia.',
 );
 
