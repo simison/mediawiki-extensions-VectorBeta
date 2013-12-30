@@ -261,6 +261,7 @@ $messages['nl'] = array(
  * @author Tar Lócesilion
  */
 $messages['pl'] = array(
+	'vector-beta-feature-typography-message' => 'Odświeżona typografia',
 	'vector-beta-feature-typography-description' => 'Unowocześnia typografię skórki Vector w celu poprawy czytelności, dostępności www oraz spójności tekstu czytanego z komputera i urządzenia mobilnego.',
 );
 
