@@ -38,6 +38,14 @@ $messages['qqq'] = array(
 	'vector-beta-feature-typography-description' => 'Brief explanation of Vector typography beta feature experiment which updates/refreshes Vectors existing typography for first time since its launch.',
 );
 
+/** Arabic (العربية)
+ * @author Asaifm
+ */
+$messages['ar'] = array(
+	'vector-beta-feature-typography-message' => 'تحديث الطباعة',
+	'vector-beta-feature-typography-description' => 'يعمل الإمتداد على تحديث وتنقيح أسلوب الطباعة الخاص بواجهة فكتور لتحسين المقروئية (سهولة القراءة) والموصولية (إمكانية الوصول لأي معلومة) والحفاظ على إتساق الخطوط.',
+);
+
 /** Asturian (asturianu)
  * @author Xuacu
  */
