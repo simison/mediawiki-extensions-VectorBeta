@@ -35,7 +35,7 @@ $wgResourceModules = array_merge( $wgResourceModules, array(
 		'styles' => array(
 			'less/styles.less',
 		),
-		'remoteBasePath' => $remoteExtPath,
+		'remoteExtPath' => $remoteExtPath,
 		'localBasePath' => $localBasePath,
 	),
 ) );
