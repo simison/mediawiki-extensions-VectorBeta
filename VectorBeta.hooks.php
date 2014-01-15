@@ -21,7 +21,8 @@
 
 class VectorBetaHooks {
 	static function getPreferences( $user, &$prefs ) {
-		global $wgExtensionAssetsPath, $wgVectorBetaPersonalBar;
+		global $wgExtensionAssetsPath, $wgVectorBetaPersonalBar,
+			$wgVectorBetaWinter;
 
 		$screenshotFileName = '/VectorBeta/typography-beta.svg';
 		$language = RequestContext::getMain()->getLanguage();
@@ -52,6 +53,17 @@ class VectorBetaHooks {
 				'info-link' => 'https://www.mediawiki.org/wiki/Compact_Personal_Bar',
 				'discussion-link' => 'https://www.mediawiki.org/wiki/Talk:Compact_Personal_Bar',
 				'screenshot' => "$wgExtensionAssetsPath/VectorBeta/compactPersonalBar-$dir.svg",
+			);
+		}
+
+		if ( $wgVectorBetaWinter ) {
+			$prefs['betafeatures-vector-fixedheader'] = array(
+				'label-message' => 'vector-beta-feature-fixedheader-message',
+				'desc-message' => 'vector-beta-feature-fixedheader-description',
+				'info-link' => '//www.mediawiki.org/wiki/Winter',
+				'discussion-link' => '//www.mediawiki.org/wiki/Talk:Winter',
+				// FIXME: Get a screenshot from Jared asap
+				'screenshot' => '',
 				'requirements' => array(
 					'skins' => array( 'vector' ),
 				),
@@ -68,17 +80,23 @@ class VectorBetaHooks {
 	 * @return bool
 	 */
 	static function skinVectorStyleModules( $skin, &$modules ) {
-		if ( class_exists( 'BetaFeatures')
-			&& BetaFeatures::isFeatureEnabled( $skin->getUser(), 'betafeatures-vector-typography-update' )
-		) {
-			$index = array_search( 'skins.vector.styles', $modules );
-			if ( $index !== false ) {
-				array_splice( $modules, $index, 1 );
+		if ( class_exists( 'BetaFeatures' ) ) {
+			$typeEnabled = BetaFeatures::isFeatureEnabled( $skin->getUser(), 'betafeatures-vector-typography-update' );
+			$fixedHeaderEnabled = BetaFeatures::isFeatureEnabled( $skin->getUser(), 'betafeatures-vector-fixedheader' );
+			if ( $typeEnabled ) {
+				$index = array_search( 'skins.vector.styles', $modules );
+				if ( $index !== false ) {
+					array_splice( $modules, $index, 1 );
+				}
+				$modules[] = 'skins.vector.beta';
 			}
-			$modules[] = 'skins.vector.beta';
-		} elseif ( !class_exists( 'BetaFeatures' ) ) {
+			if ( $fixedHeaderEnabled ) {
+				$modules[] = 'skins.vector.header.beta';
+			}
+		} else {
 			wfDebugLog( 'VectorBeta', 'The BetaFeatures extension is not installed' );
 		}
+
 		return true;
 	}
 
@@ -90,14 +108,22 @@ class VectorBetaHooks {
 	 */
 	static function onBeforePageDisplay( &$out, &$skin ) {
 		if ( class_exists( 'BetaFeatures' ) ) {
-			$out->addModules( array(
-				'skins.vector.compactPersonalBar.defaultTracking',
-			) );
-			if ( BetaFeatures::isFeatureEnabled( $out->getSkin()->getUser(), 'betafeatures-vector-compact-personal-bar' ) ) {
-				$out->addModules( array(
-					'skins.vector.compactPersonalBar',
-				) );
+			$user = $out->getUser();
+			$modules = array();
+
+			// Fixed header experiment modules
+			if ( BetaFeatures::isFeatureEnabled( $user, 'betafeatures-vector-fixedheader' ) ) {
+				$modules[] = 'skins.vector.headerjs.beta';
 			}
+
+			// Compact Personal Bar modules
+			$modules[] = 'skins.vector.compactPersonalBar.defaultTracking';
+
+			if ( BetaFeatures::isFeatureEnabled( $user, 'betafeatures-vector-compact-personal-bar' ) ) {
+				$modules[] = 'skins.vector.compactPersonalBar';
+			}
+
+			$out->addModules( $modules );
 		} else {
 			wfDebugLog( 'VectorBeta', 'The BetaFeatures extension is not installed' );
 		}

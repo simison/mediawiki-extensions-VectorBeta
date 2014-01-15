@@ -1,0 +1,111 @@
+@import 'variables-beta';
+
+#p-logo,
+body {
+	background-color: #fff;
+}
+
+div#content {
+	padding-left: @header-height;
+}
+
+#mw-page-base {
+	background: none;
+}
+
+#p-search {
+	position: fixed;
+	top: 0;
+	left: @left-nav-width;
+	font-size: 1em;
+	margin: 0;
+	width: 100%;
+	background-color: #FFF;
+
+	// FIXME: Reset original vector style. When upstream just remove the rule.
+	form {
+		margin: 0;
+	}
+}
+
+.mw-scrolled #p-logo,
+div#simpleSearch {
+	height: @header-height;
+}
+
+.mw-scrolled #p-logo {
+	position: fixed;
+	left: 0;
+	top: 0;
+	padding: 0;
+	margin: 0;
+	width: @left-nav-width;
+	border-bottom: 1px solid @content-nav-divider-color;
+
+	a {
+		height: 2.2em;
+		width: 11em;
+		background-size: auto 2.2em;
+		background-position: center top;
+	}
+}
+
+
+// Change the border left of the content panes
+div.vectorTabs {
+	background: none;
+}
+
+#p-search,
+div.vectorTabs,
+div#content {
+	border-left: 1px solid @content-nav-divider-color;
+}
+
+#p-cactions {
+	ul {
+		right: 0;
+	}
+}
+
+div#simpleSearch {
+	background: none;
+	margin: 0;
+	border: none;
+	border-bottom: 1px solid @content-nav-divider-color;
+	width: 100%;
+
+	#searchButton {
+		position: absolute;
+		left: 0;
+		height: 100%;
+		padding: 0;
+		top: 0;
+		width: 50px;
+
+		// FIXME: Kill image tag when upstream to core.
+		img {
+			display: none;
+		}
+	}
+
+	// FIXME: Doesn't need to be so specific
+	input#searchInput {
+		position: relative;
+		left: @header-height + .35em;
+		height: 100%;
+		padding: 0;
+		margin: 0;
+	}
+}
+
+// These are not needed when typography feature is enabled but just in case they are not...
+@media screen and (min-width: 982px) {
+	#p-logo {
+		left: 0;
+	}
+	#left-navigation,
+	div#content {
+		margin-left: @left-nav-width;
+	}
+}
