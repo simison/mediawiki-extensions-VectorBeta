@@ -267,10 +267,12 @@ $messages['nl'] = array(
 
 /** Polish (polski)
  * @author Tar Lócesilion
+ * @author WTM
  */
 $messages['pl'] = array(
 	'vector-beta-feature-typography-message' => 'Odświeżona typografia',
-	'vector-beta-feature-typography-description' => 'Unowocześnia typografię skórki Vector w celu poprawy czytelności, dostępności www oraz spójności tekstu czytanego z komputera i urządzenia mobilnego.',
+	'vectorbeta-desc' => 'Odświeżona typografia w skórce Wektor w wersji beta',
+	'vector-beta-feature-typography-description' => 'Unowocześnia typografię skórki Wektor w celu poprawy czytelności, dostępności www oraz spójności tekstu czytanego z komputera i urządzenia mobilnego.',
 );
 
 /** Portuguese (português)
