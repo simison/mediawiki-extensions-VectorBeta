@@ -131,6 +131,13 @@ $messages['es'] = array(
 	'vector-beta-feature-typography-description' => 'Actualiza la tipografía de la apariencia Vector para mejorar la lectura, la accesibilidad y la coherencia.',
 );
 
+/** Basque (euskara)
+ * @author Fitoschido
+ */
+$messages['eu'] = array(
+	'vector-beta-feature-typography-message' => 'Tipografiaren eguneratzea',
+);
+
 /** Persian (فارسی)
  * @author Reza1615
  */
