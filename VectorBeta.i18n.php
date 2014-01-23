@@ -121,6 +121,15 @@ $messages['dsb'] = array(
 	'vector-beta-feature-typography-description' => 'Aktualizěrujo typografiju drastwy Vector, aby cytajobnosć, bźezbariernosć a konsistencu pólěpšył.',
 );
 
+/** Greek (Ελληνικά)
+ * @author Geraki
+ */
+$messages['el'] = array(
+	'vector-beta-feature-typography-message' => 'Ανανέωση τυπογραφίας',
+	'vectorbeta-desc' => 'Τυπογραφική ανανέωση του θέματος Vector μέσω των BetaFeatures',
+	'vector-beta-feature-typography-description' => 'Ανανέωση της τυπογραφίας του θέματος Vector για τη βελτίωση της αναγνωσιμότητας, προσβασιμότητας και τη συνέπειας.',
+);
+
 /** Spanish (español)
  * @author Fitoschido
  * @author Vivaelcelta
