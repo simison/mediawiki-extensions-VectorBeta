@@ -76,6 +76,7 @@ $messages['ca'] = array(
  */
 $messages['ce'] = array(
 	'vector-beta-feature-typography-message' => 'Кечъяр карлаяккхар',
+	'vectorbeta-desc' => '«Векторан» тема кечяр карлайоккху бета-функцеш лелош',
 	'vector-beta-feature-typography-description' => 'Еша а хьажа а атта хилийта «Векторан» теман кечдар карладоккху.',
 );
 
