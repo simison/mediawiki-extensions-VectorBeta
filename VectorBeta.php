@@ -22,7 +22,7 @@
 $localBasePath = dirname( __DIR__ ) . '/VectorBeta';
 $remoteExtPath = 'VectorBeta';
 
-$wgExtensionCredits['other'][] = array(
+$wgExtensionCredits['betafeatures'][] = array(
 	'author' => array( 'Jon Robson', 'Trevor Parscal' ),
 	'descriptionmsg' => 'vectorbeta-desc',
 	'name' => 'VectorBeta',
