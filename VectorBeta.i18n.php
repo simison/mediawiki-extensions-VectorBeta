@@ -355,3 +355,12 @@ $messages['zh-hans'] = array(
 	'vectorbeta-desc' => '进行功能测试的Vector皮肤排版样式更新',
 	'vector-beta-feature-typography-description' => '更新Vector皮肤的排版样式，使其易读、易用、样式一致。',
 );
+
+/** Traditional Chinese (中文（繁體）‎)
+ * @author Liuxinyu970226
+ */
+$messages['zh-hant'] = array(
+	'vector-beta-feature-typography-message' => '排版刷新',
+	'vectorbeta-desc' => '經由測試功能之Vector皮膚排版刷新',
+	'vector-beta-feature-typography-description' => '更新Vector皮膚排版以改進可閱讀性、可連接性與一致性。',
+);
