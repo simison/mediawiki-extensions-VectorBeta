@@ -210,6 +210,15 @@ $messages['hsb'] = array(
 	'vector-beta-feature-typography-description' => 'Aktualizuje typografiju drasty Vector, zo by čitajomnosć, bjezbarjernosć a konsistencu polěpšił.',
 );
 
+/** Hungarian (magyar)
+ * @author Tgr
+ */
+$messages['hu'] = array(
+	'vector-beta-feature-typography-message' => 'Tipográfiai vérfrissítés',
+	'vectorbeta-desc' => 'Béta funkcióként módosítja a Vector felület tipográfiáját',
+	'vector-beta-feature-typography-description' => 'Módosítja a Vector felület tipográfiáját, hogy szebb, könnyebben olvasható és egységesebb legyen.',
+);
+
 /** Indonesian (Bahasa Indonesia)
  * @author William Surya Permana
  */
