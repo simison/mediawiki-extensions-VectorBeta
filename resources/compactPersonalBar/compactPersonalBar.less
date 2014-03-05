@@ -3,6 +3,14 @@
 @fadeDuration: .2s;
 @fadeDelay: .1s;
 
+.background-icon(@name) {
+	.background-image-svg("images/@{name}.svg", 'images/@{name}.png');
+
+	&:hover {
+		.background-image-svg('images/@{name}Hover.svg', 'images/@{name}Hover.png');
+	}
+}
+
 #p-personal {
 	ul {
 		// FIXME: overrides for Vector styles
@@ -36,10 +44,12 @@
 
 			a {
 				display: block;
-				padding: .4em (.6em + 1.2em) .4em .6em;
+				padding: .4em 2.1em;
 				border-radius: 2px;
 				color: #000;
 				text-decoration: none;
+				background-size: 24px 24px;
+				background-repeat: no-repeat;
 			}
 		}
 
@@ -74,7 +84,7 @@
 				}
 
 				&:hover {
-					background: #4c85fb;
+					background-color: #4c85fb;
 					color: #fff;
 
 					span {
@@ -97,4 +107,32 @@
 			.transition(border-top 0s @fadeDelay, max-height 0s @fadeDelay, opacity @fadeDuration @fadeDelay;);
 		}
 	}
+}
+
+#pt-userpage a {
+	.background-image-svg("images/user.svg", "images/user.png");
+}
+
+#pt-mycontris a {
+	.background-icon("contributions");
+}
+
+#pt-notifications-flyout a {
+	.background-icon("notifications");
+}
+
+#pt-mytalk a {
+	.background-icon("talk");
+}
+
+#pt-watchlist a {
+	.background-icon("watchlist");
+}
+
+#pt-preferences a {
+	.background-icon("preferences");
+}
+
+#pt-betafeatures a {
+	.background-icon("beta");
 }
