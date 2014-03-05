@@ -246,6 +246,14 @@ $messages['ja'] = array(
 	'vector-beta-feature-typography-description' => 'ベクター外装の文字体裁について、読みやすさ、アクセシビリティ、一貫性を改善します。',
 );
 
+/** Georgian (ქართული)
+ * @author Otogi
+ */
+$messages['ka'] = array(
+	'vector-beta-feature-typography-message' => 'გაფორმების განახლება',
+	'vectorbeta-desc' => 'ვექტორული თემის გაფორმების განახლება ბეტა-ფუნქციონალის გამოყენებით',
+);
+
 /** Korean (한국어)
  * @author 아라
  */
