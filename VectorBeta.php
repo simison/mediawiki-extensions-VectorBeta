@@ -54,7 +54,32 @@ $wgVBResourceBoilerplate = array(
 	'remoteExtPath' => 'VectorBeta',
 );
 
+$wgResourceModules['skins.vector.compactPersonalBar.trackClick'] = $wgVBResourceBoilerplate + array(
+	'dependencies' => array(
+		'mediawiki.user',
+		'ext.eventLogging',
+		'skins.vector.compactPersonalBar.schema',
+	),
+	'scripts' => array(
+		'resources/compactPersonalBar/trackClick.js',
+	),
+	'position' => 'top',
+);
+
+$wgResourceModules['skins.vector.compactPersonalBar.defaultTracking'] = $wgVBResourceBoilerplate + array(
+	'dependencies' => array(
+		'skins.vector.compactPersonalBar.trackClick',
+	),
+	'scripts' => array(
+		'resources/compactPersonalBar/defaultTracking.js',
+	),
+	'position' => 'top',
+);
+
 $wgResourceModules['skins.vector.compactPersonalBar'] = $wgVBResourceBoilerplate + array(
+	'dependencies' => array(
+		'skins.vector.compactPersonalBar.trackClick',
+	),
 	'styles' => array(
 		'resources/compactPersonalBar/compactPersonalBar.less',
 	),
@@ -74,3 +99,4 @@ $wgResourceModules['skins.vector.compactPersonalBar'] = $wgVBResourceBoilerplate
 $wgHooks['GetBetaFeaturePreferences'][] = 'VectorBetaHooks::getPreferences';
 $wgHooks['SkinVectorStyleModules'][] = 'VectorBetaHooks::skinVectorStyleModules';
 $wgHooks['BeforePageDisplay'][] = 'VectorBetaHooks::onBeforePageDisplay';
+$wgHooks['ResourceLoaderRegisterModules'][] = 'VectorBetaHooks::onResourceLoaderRegisterModules';

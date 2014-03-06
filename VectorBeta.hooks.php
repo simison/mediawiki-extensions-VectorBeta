@@ -89,18 +89,42 @@ class VectorBetaHooks {
 	 * @return bool
 	 */
 	static function onBeforePageDisplay( &$out, &$skin ) {
-		if (
-			class_exists( 'BetaFeatures' ) &&
-			BetaFeatures::isFeatureEnabled( $out->getSkin()->getUser(), 'betafeatures-vector-compact-personal-bar' )
-		) {
-
+		if ( class_exists( 'BetaFeatures' ) ) {
 			$out->addModules( array(
-				'skins.vector.compactPersonalBar',
+				'skins.vector.compactPersonalBar.defaultTracking',
 			) );
-		} elseif ( !class_exists( 'BetaFeatures' ) ) {
+			if ( BetaFeatures::isFeatureEnabled( $out->getSkin()->getUser(), 'betafeatures-vector-compact-personal-bar' ) ) {
+				$out->addModules( array(
+					'skins.vector.compactPersonalBar',
+				) );
+			}
+		} else {
 			wfDebugLog( 'VectorBeta', 'The BetaFeatures extension is not installed' );
 		}
 
 		return true;
 	}
+
+	/**
+	 * ResourceLoaderRegisterModules hook handler
+	 * Registering our EventLogging schema modules
+	 * @see https://www.mediawiki.org/wiki/Manual:Hooks/ResourceLoaderRegisterModules
+	 *
+	 * @param ResourceLoader &$resourceLoader The ResourceLoader object
+	 * @return bool Always true
+	 */
+	public static function onResourceLoaderRegisterModules( ResourceLoader &$resourceLoader ) {
+		global $wgResourceModules;
+
+		if ( class_exists( 'ResourceLoaderSchemaModule' ) ) {
+			$wgResourceModules[ 'skins.vector.compactPersonalBar.schema' ] = array(
+				'class'  => 'ResourceLoaderSchemaModule',
+				'schema' => 'PersonalBar',
+				'revision' => 7829128,
+			);
+		}
+
+		return true;
+	}
+
 }
