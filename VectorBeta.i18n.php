@@ -336,6 +336,15 @@ $messages['ru'] = array(
 	'vector-beta-feature-typography-description' => 'Обновляет оформление темы «Векторное», чтобы улучшить читаемость, доступность и единообразие.',
 );
 
+/** Swedish (svenska)
+ * @author Lokal Profil
+ */
+$messages['sv'] = array(
+	'vector-beta-feature-typography-message' => 'Typografisk uppdatering',
+	'vectorbeta-desc' => 'Typografisk uppdatering av Vector-utseendet via Betafunktioner',
+	'vector-beta-feature-typography-description' => 'Uppdaterar typografin i Vector-utseendet för att förbättra läsbarhet, tillgänglighet och enhetlighet.',
+);
+
 /** Turkish (Türkçe)
  * @author Meelo
  */
