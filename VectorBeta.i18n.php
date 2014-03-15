@@ -300,6 +300,15 @@ $messages['nl'] = array(
 	'vector-beta-feature-typography-description' => 'Werkt de typografie van het uiterlijk Vector bij om de leesbaarheid, toegankelijkheid en consistentie te verbeteren.',
 );
 
+/** Occitan (occitan)
+ * @author Cedric31
+ */
+$messages['oc'] = array(
+	'vector-beta-feature-typography-message' => 'Actualizacion de la tipografia',
+	'vectorbeta-desc' => 'Actualizacion de la tipografia de l’abilhatge Vector en utilizant las foncionalitats bèta',
+	'vector-beta-feature-typography-description' => 'Metre a jorn la tipografia de l’abilhatge Vector en melhorant la legibilitat, l’accessibilitat e la coeréncia.',
+);
+
 /** Polish (polski)
  * @author Tar Lócesilion
  * @author WTM
