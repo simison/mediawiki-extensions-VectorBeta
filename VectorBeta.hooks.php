@@ -107,6 +107,11 @@ class VectorBetaHooks {
 	 * @return bool
 	 */
 	static function onBeforePageDisplay( &$out, &$skin ) {
+		// Ensure these beta features don't run against another skin!
+		// FIXME: See bug 62897
+		if ( $skin->getSkinName() !== 'vector' ) {
+			return true;
+		}
 		if ( class_exists( 'BetaFeatures' ) ) {
 			$user = $out->getUser();
 			$modules = array();
