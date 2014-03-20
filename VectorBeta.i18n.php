@@ -101,6 +101,8 @@ $messages['de'] = array(
 	'vector-beta-feature-typography-message' => 'Typografieaktualisierung',
 	'vectorbeta-desc' => 'Ermöglicht bei der Benutzeroberfläche „Vector“ Schriftartänderungen',
 	'vector-beta-feature-typography-description' => 'Aktualisiert die Typografie des Vector-Skins zur Verbesserung der Lesbarkeit, Barrierefreiheit und Konsistenz.',
+	'vector-beta-feature-compact-personal-bar-message' => 'Kompakte persönliche Werkzeugleiste',
+	'vector-beta-feature-compact-personal-bar-description' => 'Klappt die persönliche Werkzeugleiste in ein Flyout-Menü ein.',
 );
 
 /** Swiss High German (Schweizer Hochdeutsch)
@@ -177,6 +179,8 @@ $messages['fr'] = array(
 	'vector-beta-feature-typography-message' => 'Actualisation de la typographie',
 	'vectorbeta-desc' => 'Actualisation de la typographie de l’habillage Vector en utilisant les fonctionnalités bêta',
 	'vector-beta-feature-typography-description' => 'Mettre à jour la typographie de l’habillage Vector en améliorant la lisibilité, l’accessibilité et la cohérence.',
+	'vector-beta-feature-compact-personal-bar-message' => 'Barre personnelle compacte',
+	'vector-beta-feature-compact-personal-bar-description' => 'Replie la barre personnelle dans un menu déroulant.',
 );
 
 /** Galician (galego)
@@ -195,6 +199,8 @@ $messages['he'] = array(
 	'vector-beta-feature-typography-message' => 'עדכון גופנים',
 	'vectorbeta-desc' => 'עדכון גופנים בעיצוב וקטור באמצעות אפשרויות בטא',
 	'vector-beta-feature-typography-description' => 'עדכון גופנים לשם שיפור בקריאוּת, בנגישות ובעקיבות.',
+	'vector-beta-feature-compact-personal-bar-message' => 'סרגל אישי מוקטן',
+	'vector-beta-feature-compact-personal-bar-description' => 'מצמצם את הסרגל האישי לתפריט מרחף',
 );
 
 /** Croatian (hrvatski)
@@ -239,6 +245,8 @@ $messages['it'] = array(
 	'vector-beta-feature-typography-message' => 'Aggiornamenti tipografici',
 	'vectorbeta-desc' => 'Aggiornamenti tipografici della skin Vector con BetaFeatures',
 	'vector-beta-feature-typography-description' => "Aggiornamenti tipografici della skin Vector per migliorare la leggibilità, l'accessibilità e la consistenza.",
+	'vector-beta-feature-compact-personal-bar-message' => 'Compatta barra personale',
+	'vector-beta-feature-compact-personal-bar-description' => 'Comprime la barra personale in un menu a comparsa.',
 );
 
 /** Japanese (日本語)
@@ -284,6 +292,8 @@ $messages['mk'] = array(
 	'vector-beta-feature-typography-message' => 'Типографско освежување',
 	'vectorbeta-desc' => 'Типографско освежување на рувото „Векторско“ користејќи БетаФункции',
 	'vector-beta-feature-typography-description' => 'Ја надградува типографијата на рувото „Векторско“ за подобра читливост, пристапност и доследност во приказот',
+	'vector-beta-feature-compact-personal-bar-message' => 'Компактен личен алатник',
+	'vector-beta-feature-compact-personal-bar-description' => 'Го собира личниот алатник во расклопно мени.',
 );
 
 /** Malayalam (മലയാളം)
