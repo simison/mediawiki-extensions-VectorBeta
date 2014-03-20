@@ -79,51 +79,49 @@ $wgResourceModules = array_merge( $wgResourceModules, array(
 			'less/search-suggestions.less',
 		),
 	),
+
+	'skins.vector.compactPersonalBar.trackClick' => $wgVBResourceBoilerplate + array(
+		'dependencies' => array(
+			'mediawiki.user',
+			'ext.eventLogging',
+			'skins.vector.compactPersonalBar.schema',
+		),
+		'scripts' => array(
+			'resources/compactPersonalBar/trackClick.js',
+		),
+		'position' => 'top',
+	),
+
+	'skins.vector.compactPersonalBar.defaultTracking' => $wgVBResourceBoilerplate + array(
+		'dependencies' => array(
+			'skins.vector.compactPersonalBar.trackClick',
+		),
+		'scripts' => array(
+			'resources/compactPersonalBar/defaultTracking.js',
+		),
+		'position' => 'top',
+	),
+
+	'skins.vector.compactPersonalBar' => $wgVBResourceBoilerplate + array(
+		'dependencies' => array(
+			'skins.vector.compactPersonalBar.trackClick',
+		),
+		'styles' => array(
+			'resources/compactPersonalBar/compactPersonalBar.less',
+		),
+		'scripts' => array(
+			'resources/compactPersonalBar/compactPersonalBar.js',
+		),
+		'messages' => array(
+			'notifications',
+			'privacy',
+			'privacypage',
+			'help',
+			'helppage',
+		),
+		'position' => 'top',
+	),
 ) );
-
-
-// FIXME: Move these into array_merge above
-$wgResourceModules['skins.vector.compactPersonalBar.trackClick'] = $wgVBResourceBoilerplate + array(
-	'dependencies' => array(
-		'mediawiki.user',
-		'ext.eventLogging',
-		'skins.vector.compactPersonalBar.schema',
-	),
-	'scripts' => array(
-		'resources/compactPersonalBar/trackClick.js',
-	),
-	'position' => 'top',
-);
-
-$wgResourceModules['skins.vector.compactPersonalBar.defaultTracking'] = $wgVBResourceBoilerplate + array(
-	'dependencies' => array(
-		'skins.vector.compactPersonalBar.trackClick',
-	),
-	'scripts' => array(
-		'resources/compactPersonalBar/defaultTracking.js',
-	),
-	'position' => 'top',
-);
-
-$wgResourceModules['skins.vector.compactPersonalBar'] = $wgVBResourceBoilerplate + array(
-	'dependencies' => array(
-		'skins.vector.compactPersonalBar.trackClick',
-	),
-	'styles' => array(
-		'resources/compactPersonalBar/compactPersonalBar.less',
-	),
-	'scripts' => array(
-		'resources/compactPersonalBar/compactPersonalBar.js',
-	),
-	'messages' => array(
-		'notifications',
-		'privacy',
-		'privacypage',
-		'help',
-		'helppage',
-	),
-	'position' => 'top',
-);
 
 $wgHooks['SkinTemplateOutputPageBeforeExec'][] = 'VectorBetaHooks::getSkinTemplateOutputPageBeforeExec';
 $wgHooks['GetBetaFeaturePreferences'][] = 'VectorBetaHooks::getPreferences';
