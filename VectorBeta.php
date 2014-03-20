@@ -56,6 +56,7 @@ $wgResourceModules = array_merge( $wgResourceModules, array(
 	'skins.vector.header.beta' => $wgVBResourceBoilerplate + array(
 		'styles' => array(
 			'less/header.less',
+			'less/page-actions.less',
 		),
 		// Other ensures this loads after the Vector skin styles
 		'group' => 'other',
@@ -118,6 +119,7 @@ $wgResourceModules['skins.vector.compactPersonalBar'] = $wgVBResourceBoilerplate
 	'position' => 'top',
 );
 
+$wgHooks['SkinTemplateOutputPageBeforeExec'][] = 'VectorBetaHooks::getSkinTemplateOutputPageBeforeExec';
 $wgHooks['GetBetaFeaturePreferences'][] = 'VectorBetaHooks::getPreferences';
 $wgHooks['BeforePageDisplay'][] = 'VectorBetaHooks::onBeforePageDisplay';
 $wgHooks['SkinVectorStyleModules'][] = 'VectorBetaHooks::skinVectorStyleModules';
