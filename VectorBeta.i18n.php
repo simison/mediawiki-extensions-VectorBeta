@@ -145,6 +145,8 @@ $messages['es'] = array(
 	'vector-beta-feature-typography-message' => 'Actualización tipográfica',
 	'vectorbeta-desc' => 'Actualización tipográfica de la apariencia Vector usando caraterísticas experimentales (BetaFeatures)',
 	'vector-beta-feature-typography-description' => 'Actualiza la tipografía de la apariencia Vector para mejorar la lectura, la accesibilidad y la coherencia.',
+	'vector-beta-feature-compact-personal-bar-message' => 'Barra personal compacta',
+	'vector-beta-feature-compact-personal-bar-description' => 'Contrae la barra personal en un menú emergente.',
 );
 
 /** Basque (euskara)
@@ -358,6 +360,16 @@ $messages['ru'] = array(
 	'vector-beta-feature-typography-message' => 'Обновление оформления',
 	'vectorbeta-desc' => 'Обновление оформления темы «Векторное» с использованием бета-функционала',
 	'vector-beta-feature-typography-description' => 'Обновляет оформление темы «Векторное», чтобы улучшить читаемость, доступность и единообразие.',
+	'vector-beta-feature-compact-personal-bar-message' => 'Компактная личная панель',
+	'vector-beta-feature-compact-personal-bar-description' => 'Сворачивает личную панель в всплывающее меню.',
+);
+
+/** Scots (Scots)
+ * @author John Reid
+ */
+$messages['sco'] = array(
+	'vector-beta-feature-compact-personal-bar-message' => 'Compact personal baur',
+	'vector-beta-feature-compact-personal-bar-description' => 'Collapses personal baur intil ae flyoot menu.',
 );
 
 /** Swedish (svenska)
