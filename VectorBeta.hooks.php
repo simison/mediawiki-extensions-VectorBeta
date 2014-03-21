@@ -83,7 +83,14 @@ class VectorBetaHooks {
 				self::getPageActionsHtml( $pageActions, $morePageActions ) .
 				self::getEditButtonHtml( $tpl );
 			$nav['namespaces'] = array();
-			$nav['views'] = array();
+			$nav['views'] = array(
+				'menu' => array(
+					'class' => '',
+					'text' => wfMessage( 'navigation-heading' ),
+					'href' => SpecialPage::getTitleFor( 'MobileMenu' )->getLocalUrl(),
+					'id' => 'mw-main-menu-button',
+				),
+			);
 			$nav['actions'] = array();
 			$tpl->set( 'prebodyhtml', $prebodytext );
 			$tpl->set( 'content_navigation', $nav );

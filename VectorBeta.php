@@ -73,6 +73,7 @@ $wgResourceModules = array_merge( $wgResourceModules, array(
 		),
 		'scripts' => array(
 			'javascripts/header.js',
+			'javascripts/hamburger.js',
 		),
 		'styles' => array(
 			'less/search-suggestions.less',

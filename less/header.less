@@ -123,6 +123,82 @@ div#content,
 	display: none;
 }
 
+.mw-navigation-enabled {
+	div#content {
+		border-left: none;
+	}
+
+	div#mw-panel {
+		border-left: solid 12px #252525;
+		display: block;
+		position: absolute;
+		width: 16em;
+		top: 0;
+		padding: 0;
+		bottom: 0;
+		background-color: #4E4E4E;
+		.box-sizing(border-box);
+
+		&.collapsible-nav {
+			.portal {
+				// FIXME: Argggghh importants
+				padding: 0 !important;
+				margin: 0 !important;
+
+				&.persistent .body {
+					margin: 0;
+				}
+			}
+		}
+
+		div.portal div.body ul {
+			li {
+				position: relative;
+				font-size: 1.2em;
+				text-shadow: 0 1px 0 rgba(0, 0, 0, 0.6);
+				border-bottom: 1px solid #3E3E3E;
+				a {
+					color: #FFF;
+					display: block;
+					padding: 13px 10px 11px 34px;
+				}
+			}
+		}
+	}
+
+	#mw-head,
+	div#content {
+		left: 16em;
+	}
+}
+
+#mw-main-menu-button {
+	position: absolute;
+	top: .35em;
+	left: 0;
+	background: none;
+	height: @header-height;
+	width: @header-height;
+	background-repeat: no-repeat;
+	-o-background-size: 24px auto;
+	-webkit-background-size: 24px auto;
+	-moz-background-size: 24px auto;
+	background-size: 24px auto;
+	.background-image-svg( "images/hamburger.svg", "images/hamburger.png" );
+	z-index: 1;
+	overflow: hidden;
+	text-indent: -999px;
+	background-position: 50% 50%;
+	border-right: 1px solid #CCC;
+	a {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+	}
+}
+
 // These are not needed when typography feature is enabled but just in case they are not...
 @media screen and (min-width: 982px) {
 	#p-logo {
@@ -138,6 +214,11 @@ div#content,
 	#p-search {
 		top: 0;
 		position: fixed;
+	}
+
+
+	#mw-main-menu-button {
+		display: none;
 	}
 
 	div#simpleSearch {
