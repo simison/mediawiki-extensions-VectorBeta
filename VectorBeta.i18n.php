@@ -30,6 +30,8 @@ $messages['en'] = array(
 	'vector-beta-feature-typography-description' => 'Updates typography of the Vector skin to improve readability, accessibility and consistency.',
 	'vector-beta-feature-compact-personal-bar-message' => 'Compact personal bar',
 	'vector-beta-feature-compact-personal-bar-description' => 'Collapses personal bar into a flyout menu.',
+	'vector-beta-feature-fixedheader-message' => 'Winter',
+	'vector-beta-feature-fixedheader-description' => 'Turns the header on the default Vector skin into a fixed header.',
 );
 
 /** Message documentation (Message documentation)
@@ -40,6 +42,8 @@ $messages['qqq'] = array(
 	'vector-beta-feature-typography-description' => 'Brief explanation of Vector typography beta feature experiment which updates/refreshes Vectors existing typography for first time since its launch.',
 	'vector-beta-feature-compact-personal-bar-message' => 'Name shown in user preferences for Compact personal bar beta feature experiment.',
 	'vector-beta-feature-compact-personal-bar-description' => 'Brief explanation of Compact personal bar beta feature experiment.',
+	'vector-beta-feature-fixedheader-message' => 'Name shown in user preferences for Vector header beta feature experiment.',
+	'vector-beta-feature-fixedheader-description' => 'Brief explanation of Vector header beta feature experiment which makes the header fixed.',
 );
 
 /** Arabic (العربية)

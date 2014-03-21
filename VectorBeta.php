@@ -19,8 +19,10 @@
  * @ingroup extensions
  */
 
-$localBasePath = dirname( __DIR__ ) . '/VectorBeta';
-$remoteExtPath = 'VectorBeta';
+$wgVBResourceBoilerplate = array(
+	'localBasePath' =>  __DIR__,
+	'remoteExtPath' => 'VectorBeta',
+);
 
 $wgExtensionCredits['betafeatures'][] = array(
 	'author' => array( 'Jon Robson', 'Trevor Parscal', 'Juliusz Gonera' ),
@@ -35,25 +37,45 @@ $wgExtensionCredits['betafeatures'][] = array(
  */
 $wgVectorBetaPersonalBar = false;
 
-$wgResourceModules = array_merge( $wgResourceModules, array(
-	'skins.vector.beta' => array(
-		'styles' => array(
-			'less/styles.less',
-		),
-		'remoteExtPath' => $remoteExtPath,
-		'localBasePath' => $localBasePath,
-	),
-) );
+/**
+ * Enable Winter experiment.
+ */
+$wgVectorBetaWinter = false;
 
 $wgAutoloadClasses['VectorBetaHooks'] = __DIR__ . '/VectorBeta.hooks.php';
 
 $wgExtensionMessagesFiles['VectorBeta'] = __DIR__ . '/VectorBeta.i18n.php';
 
-$wgVBResourceBoilerplate = array(
-	'localBasePath' =>  __DIR__,
-	'remoteExtPath' => 'VectorBeta',
-);
+$wgResourceModules = array_merge( $wgResourceModules, array(
+	'skins.vector.beta' => $wgVBResourceBoilerplate + array(
+		'styles' => array(
+			'less/styles.less',
+		),
+	),
 
+	'skins.vector.header.beta' => $wgVBResourceBoilerplate + array(
+		'styles' => array(
+			'less/header.less',
+		),
+		// Other ensures this loads after the Vector skin styles
+		'group' => 'other',
+	),
+
+	'skins.vector.headerjs.beta' => $wgVBResourceBoilerplate + array(
+		'dependencies' => array(
+			'jquery.throttle-debounce',
+		),
+		'scripts' => array(
+			'javascripts/header.js',
+		),
+		'styles' => array(
+			'less/search-suggestions.less',
+		),
+	),
+) );
+
+
+// FIXME: Move these into array_merge above
 $wgResourceModules['skins.vector.compactPersonalBar.trackClick'] = $wgVBResourceBoilerplate + array(
 	'dependencies' => array(
 		'mediawiki.user',
@@ -97,6 +119,7 @@ $wgResourceModules['skins.vector.compactPersonalBar'] = $wgVBResourceBoilerplate
 );
 
 $wgHooks['GetBetaFeaturePreferences'][] = 'VectorBetaHooks::getPreferences';
+$wgHooks['BeforePageDisplay'][] = 'VectorBetaHooks::onBeforePageDisplay';
 $wgHooks['SkinVectorStyleModules'][] = 'VectorBetaHooks::skinVectorStyleModules';
 $wgHooks['BeforePageDisplay'][] = 'VectorBetaHooks::onBeforePageDisplay';
 $wgHooks['ResourceLoaderRegisterModules'][] = 'VectorBetaHooks::onResourceLoaderRegisterModules';
