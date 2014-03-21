@@ -54,14 +54,14 @@ $wgExtensionMessagesFiles['VectorBeta'] = __DIR__ . '/VectorBeta.i18n.php';
 $wgResourceModules = array_merge( $wgResourceModules, array(
 	'skins.vector.beta' => $wgVBResourceBoilerplate + array(
 		'styles' => array(
-			'less/styles.less',
+			'resources/typography/styles.less',
 		),
 	),
 
 	'skins.vector.header.beta' => $wgVBResourceBoilerplate + array(
 		'styles' => array(
-			'less/header.less',
-			'less/page-actions.less',
+			'resources/fixedHeader/header.less',
+			'resources/fixedHeader/page-actions.less',
 		),
 		// Other ensures this loads after the Vector skin styles
 		'group' => 'other',
@@ -72,11 +72,11 @@ $wgResourceModules = array_merge( $wgResourceModules, array(
 			'jquery.throttle-debounce',
 		),
 		'scripts' => array(
-			'javascripts/header.js',
-			'javascripts/hamburger.js',
+			'resources/fixedheader/header.js',
+			'resources/fixedheader/hamburger.js',
 		),
 		'styles' => array(
-			'less/search-suggestions.less',
+			'resources/fixedheader/search-suggestions.less',
 		),
 	),
 
