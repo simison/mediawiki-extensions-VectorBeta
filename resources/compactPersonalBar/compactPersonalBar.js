@@ -110,6 +110,7 @@
 			// notifications item can't be simply cloned, markup has to be changed
 			// and label added
 			addItem( 'interactions', 'notifications', createItem( {
+				id: 'pt-notifications-flyout',
 				text: mw.msg( 'notifications' ),
 				count: $( '#pt-notifications' ).text(),
 				href: $( '#pt-notifications' ).find( 'a' ).attr( 'href' )
