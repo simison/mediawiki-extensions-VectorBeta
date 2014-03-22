@@ -235,23 +235,17 @@ class VectorBetaHooks {
 		global $wgExtensionAssetsPath, $wgVectorBetaPersonalBar,
 			$wgVectorBetaWinter;
 
-		$screenshotFileName = '/VectorBeta/typography-beta.svg';
-		$language = RequestContext::getMain()->getLanguage();
-		$dir = $language->getDir();
-		if ( $language->isRtl() ) {
-			if ( in_array( $language->getCode(), array( 'he', 'yi' ) ) ) {
-				$screenshotFileName = '/VectorBeta/typography-beta-hebr.svg';
-			} else {
-				$screenshotFileName = '/VectorBeta/typography-beta-arab.svg';
-			}
-		}
-
 		$prefs['betafeatures-vector-typography-update'] = array(
 			'label-message' => 'vector-beta-feature-typography-message',
 			'desc-message' => 'vector-beta-feature-typography-description',
 			'info-link' => 'https://www.mediawiki.org/wiki/Typography_refresh',
 			'discussion-link' => 'https://www.mediawiki.org/wiki/Talk:Typography_refresh',
-			'screenshot' => $wgExtensionAssetsPath . $screenshotFileName,
+			'screenshot' => array(
+				'ltr' => $wgExtensionAssetsPath . '/VectorBeta/typography-beta.svg',
+				'rtl' => $wgExtensionAssetsPath . '/VectorBeta/typography-beta-arab.svg',
+				'he' => $wgExtensionAssetsPath . '/VectorBeta/typography-beta-hebr.svg',
+				'yi' => $wgExtensionAssetsPath . '/VectorBeta/typography-beta-hebr.svg',
+			),
 			'requirements' => array(
 				'skins' => array( 'vector' ),
 			),
@@ -263,7 +257,10 @@ class VectorBetaHooks {
 				'desc-message' => 'vector-beta-feature-compact-personal-bar-description',
 				'info-link' => 'https://www.mediawiki.org/wiki/Compact_Personal_Bar',
 				'discussion-link' => 'https://www.mediawiki.org/wiki/Talk:Compact_Personal_Bar',
-				'screenshot' => "$wgExtensionAssetsPath/VectorBeta/compactPersonalBar-$dir.svg",
+				'screenshot' => array(
+					'ltr' => "$wgExtensionAssetsPath/VectorBeta/compactPersonalBar-ltr.svg",
+					'rtl' => "$wgExtensionAssetsPath/VectorBeta/compactPersonalBar-rtl.svg",
+				),
 			);
 		}
 
