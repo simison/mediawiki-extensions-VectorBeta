@@ -107,6 +107,8 @@ $messages['de'] = array(
 	'vector-beta-feature-typography-description' => 'Aktualisiert die Typografie des Vector-Skins zur Verbesserung der Lesbarkeit, Barrierefreiheit und Konsistenz.',
 	'vector-beta-feature-compact-personal-bar-message' => 'Kompakte persönliche Werkzeugleiste',
 	'vector-beta-feature-compact-personal-bar-description' => 'Klappt die persönliche Werkzeugleiste in ein Flyout-Menü ein.',
+	'vector-beta-feature-fixedheader-message' => 'Winter',
+	'vector-beta-feature-fixedheader-description' => 'Fixiert die Kopfzeile in der Standard-Vector-Benutzeroberfläche.',
 );
 
 /** Swiss High German (Schweizer Hochdeutsch)
@@ -207,6 +209,15 @@ $messages['he'] = array(
 	'vector-beta-feature-typography-description' => 'עדכון גופנים לשם שיפור בקריאוּת, בנגישות ובעקיבות.',
 	'vector-beta-feature-compact-personal-bar-message' => 'סרגל אישי מוקטן',
 	'vector-beta-feature-compact-personal-bar-description' => 'מצמצם את הסרגל האישי לתפריט מרחף',
+	'vector-beta-feature-fixedheader-message' => 'חורף',
+	'vector-beta-feature-fixedheader-description' => 'הפיכת הסרגל העליון של עיצוב וקטור לסרגל קבוע.',
+);
+
+/** Hindi (हिन्दी)
+ * @author Wikiuser13
+ */
+$messages['hi'] = array(
+	'vector-beta-feature-fixedheader-message' => 'विंटर',
 );
 
 /** Croatian (hrvatski)
@@ -289,6 +300,7 @@ $messages['lb'] = array(
 	'vector-beta-feature-typography-message' => 'Aktualisatioun vun der Typographie',
 	'vectorbeta-desc' => 'Typographesch Opfrëschung vum Vector Ausgesinn duerch Beta-Funktiounen',
 	'vector-beta-feature-typography-description' => "Aktualiséiert d'Typographie vum Vector-Ausgesinn fir d'Liesbarkeet, D'Accessibilitéit an d'Konsistenz ze verbesseren.",
+	'vector-beta-feature-fixedheader-message' => 'Wanter',
 );
 
 /** Macedonian (македонски)
@@ -300,6 +312,8 @@ $messages['mk'] = array(
 	'vector-beta-feature-typography-description' => 'Ја надградува типографијата на рувото „Векторско“ за подобра читливост, пристапност и доследност во приказот',
 	'vector-beta-feature-compact-personal-bar-message' => 'Компактен личен алатник',
 	'vector-beta-feature-compact-personal-bar-description' => 'Го собира личниот алатник во расклопно мени.',
+	'vector-beta-feature-fixedheader-message' => 'Зима',
+	'vector-beta-feature-fixedheader-description' => 'Го претвора заглавието на рувото „Векторско“ во стандардно.',
 );
 
 /** Malayalam (മലയാളം)
@@ -318,6 +332,7 @@ $messages['nl'] = array(
 	'vector-beta-feature-typography-message' => 'Typografievernieuwing',
 	'vectorbeta-desc' => 'Typografievernieuwing van de vormgeving Vector via Betafuncties',
 	'vector-beta-feature-typography-description' => 'Werkt de typografie van het uiterlijk Vector bij om de leesbaarheid, toegankelijkheid en consistentie te verbeteren.',
+	'vector-beta-feature-fixedheader-message' => 'Winter',
 );
 
 /** Occitan (occitan)
@@ -366,6 +381,8 @@ $messages['ru'] = array(
 	'vector-beta-feature-typography-description' => 'Обновляет оформление темы «Векторное», чтобы улучшить читаемость, доступность и единообразие.',
 	'vector-beta-feature-compact-personal-bar-message' => 'Компактная личная панель',
 	'vector-beta-feature-compact-personal-bar-description' => 'Сворачивает личную панель в всплывающее меню.',
+	'vector-beta-feature-fixedheader-message' => 'Зима',
+	'vector-beta-feature-fixedheader-description' => 'Превращает заголовок в теме оформления «Векторное» в фиксированный заголовок.',
 );
 
 /** Scots (Scots)
