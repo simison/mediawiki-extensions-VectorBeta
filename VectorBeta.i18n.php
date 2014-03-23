@@ -182,6 +182,7 @@ $messages['fi'] = array(
 
 /** French (français)
  * @author Gomoko
+ * @author Maxim21
  */
 $messages['fr'] = array(
 	'vector-beta-feature-typography-message' => 'Actualisation de la typographie',
@@ -189,6 +190,7 @@ $messages['fr'] = array(
 	'vector-beta-feature-typography-description' => 'Mettre à jour la typographie de l’habillage Vector en améliorant la lisibilité, l’accessibilité et la cohérence.',
 	'vector-beta-feature-compact-personal-bar-message' => 'Barre personnelle compacte',
 	'vector-beta-feature-compact-personal-bar-description' => 'Replie la barre personnelle dans un menu déroulant.',
+	'vector-beta-feature-fixedheader-message' => 'Hiver',
 );
 
 /** Galician (galego)
@@ -332,7 +334,10 @@ $messages['nl'] = array(
 	'vector-beta-feature-typography-message' => 'Typografievernieuwing',
 	'vectorbeta-desc' => 'Typografievernieuwing van de vormgeving Vector via Betafuncties',
 	'vector-beta-feature-typography-description' => 'Werkt de typografie van het uiterlijk Vector bij om de leesbaarheid, toegankelijkheid en consistentie te verbeteren.',
+	'vector-beta-feature-compact-personal-bar-message' => 'Compacte persoonlijke werkbalk',
+	'vector-beta-feature-compact-personal-bar-description' => 'Klapt de persoonlijke werkbalk samen tot een submenu.',
 	'vector-beta-feature-fixedheader-message' => 'Winter',
+	'vector-beta-feature-fixedheader-description' => 'Verandert het horizontale menu van het uiterlijk Vector in een vast menu.',
 );
 
 /** Occitan (occitan)
@@ -346,21 +351,25 @@ $messages['oc'] = array(
 
 /** Polish (polski)
  * @author Tar Lócesilion
+ * @author Ty221
  * @author WTM
  */
 $messages['pl'] = array(
 	'vector-beta-feature-typography-message' => 'Odświeżona typografia',
 	'vectorbeta-desc' => 'Odświeżona typografia w skórce Wektor w wersji beta',
 	'vector-beta-feature-typography-description' => 'Unowocześnia typografię skórki Wektor w celu poprawy czytelności, dostępności www oraz spójności tekstu czytanego z komputera i urządzenia mobilnego.',
+	'vector-beta-feature-fixedheader-message' => 'Zima',
 );
 
 /** Portuguese (português)
+ * @author Imperadeiro98
  * @author Vitorvicentevalente
  */
 $messages['pt'] = array(
 	'vector-beta-feature-typography-message' => 'Actualização tipográfica',
 	'vectorbeta-desc' => 'Actualização tipográfica do tema Vector utilizando os Recursos Beta',
 	'vector-beta-feature-typography-description' => 'Actualiza a tipografia do tema Vector para melhorar a legibilidade, acessibilidade e consistência.',
+	'vector-beta-feature-fixedheader-message' => 'Inverno',
 );
 
 /** Romanian (română)
@@ -391,6 +400,8 @@ $messages['ru'] = array(
 $messages['sco'] = array(
 	'vector-beta-feature-compact-personal-bar-message' => 'Compact personal baur',
 	'vector-beta-feature-compact-personal-bar-description' => 'Collapses personal baur intil ae flyoot menu.',
+	'vector-beta-feature-fixedheader-message' => 'Winter',
+	'vector-beta-feature-fixedheader-description' => 'Turns the heider oan the defaut Vector skin intil ae fixt heider.',
 );
 
 /** Swedish (svenska)
@@ -404,11 +415,13 @@ $messages['sv'] = array(
 
 /** Turkish (Türkçe)
  * @author Meelo
+ * @author SiLveRLeaD
  */
 $messages['tr'] = array(
 	'vector-beta-feature-typography-message' => 'Baskı (tipografi) yenileme',
 	'vectorbeta-desc' => 'Beta Özellikle kullanarak Vector görünümünde "Baski (tipografi) yenileme" kullanma',
 	'vector-beta-feature-typography-description' => 'Okunabilirliği, erişilebilirliği ve tutarlılığı artırmak için Vector görünümüne "Baskı (tipografi) yenileme" yükleyin.',
+	'vector-beta-feature-fixedheader-message' => 'Kış',
 );
 
 /** Ukrainian (українська)
