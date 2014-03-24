@@ -1,22 +1,28 @@
 @import 'variables-beta';
+@import "mixins";
+
+// FIXME: Fail.
+#mw-notification-area {
+	display: none !important;
+}
 
 #p-logo,
 body {
 	background-color: #fff;
 }
 
-div#content {
-	padding-left: @header-height;
+#mw-head-base {
+	display: none;
 }
 
 #mw-page-base {
+	height: @header-height;
 	background: none;
 }
 
 #p-search {
-	position: fixed;
-	top: 0;
-	left: @left-nav-width;
+	position: absolute;
+	top: .35em;
 	font-size: 1em;
 	margin: 0;
 	width: 100%;
@@ -34,12 +40,10 @@ div#simpleSearch {
 }
 
 .mw-scrolled #p-logo {
-	position: fixed;
 	left: 0;
 	top: 0;
 	padding: 0;
 	margin: 0;
-	width: @left-nav-width;
 	border-bottom: 1px solid @content-nav-divider-color;
 
 	a {
@@ -69,6 +73,7 @@ div#content {
 }
 
 div#simpleSearch {
+	left: .35em;
 	background: none;
 	margin: 0;
 	border: none;
@@ -76,8 +81,11 @@ div#simpleSearch {
 	width: 100%;
 
 	#searchButton {
+		.icon("magnifying_glass_gray");
+		background-size: 24px auto;
 		position: absolute;
-		left: 0;
+		left: auto;
+		right: 0;
 		height: 100%;
 		padding: 0;
 		top: 0;
@@ -92,11 +100,27 @@ div#simpleSearch {
 	// FIXME: Doesn't need to be so specific
 	input#searchInput {
 		position: relative;
-		left: @header-height + .35em;
+		left: @header-height + .35em + .35em;
 		height: 100%;
 		padding: 0;
 		margin: 0;
 	}
+}
+
+div#footer,
+#left-navigation,
+div#content,
+#p-search,
+#mw-panel {
+	left: 0;
+	margin-left: 0;
+}
+
+#p-tb,
+#p-logo,
+#p-personal,
+#mw-panel {
+	display: none;
 }
 
 // These are not needed when typography feature is enabled but just in case they are not...
@@ -104,8 +128,45 @@ div#simpleSearch {
 	#p-logo {
 		left: 0;
 	}
+}
+
+@media screen and (min-width: 768px) {
+	div#content {
+		padding-left: @header-height;
+	}
+
+	#p-search {
+		top: 0;
+		position: fixed;
+	}
+
+	div#simpleSearch {
+		#searchButton {
+			left: 0;
+			right: auto;
+		}
+	}
+
+	div#footer,
 	#left-navigation,
 	div#content {
 		margin-left: @left-nav-width;
+	}
+
+	#p-search {
+		left: @left-nav-width;
+	}
+
+	.mw-scrolled {
+		#p-logo {
+			width: @left-nav-width;
+			position: fixed;
+		}
+	}
+
+	#p-logo,
+	#p-personal,
+	#mw-panel {
+		display: block;
 	}
 }
