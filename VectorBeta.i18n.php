@@ -191,6 +191,7 @@ $messages['fr'] = array(
 	'vector-beta-feature-compact-personal-bar-message' => 'Barre personnelle compacte',
 	'vector-beta-feature-compact-personal-bar-description' => 'Replie la barre personnelle dans un menu déroulant.',
 	'vector-beta-feature-fixedheader-message' => 'Hiver',
+	'vector-beta-feature-fixedheader-description' => 'Fixe l’entête de l’habillage Vecteur à un entête fixe.',
 );
 
 /** Galician (galego)
@@ -266,6 +267,7 @@ $messages['it'] = array(
 	'vector-beta-feature-typography-description' => "Aggiornamenti tipografici della skin Vector per migliorare la leggibilità, l'accessibilità e la consistenza.",
 	'vector-beta-feature-compact-personal-bar-message' => 'Compatta barra personale',
 	'vector-beta-feature-compact-personal-bar-description' => 'Comprime la barra personale in un menu a comparsa.',
+	'vector-beta-feature-fixedheader-message' => 'Inverno',
 );
 
 /** Japanese (日本語)
@@ -431,6 +433,10 @@ $messages['uk'] = array(
 	'vector-beta-feature-typography-message' => 'Оновити оформлення',
 	'vectorbeta-desc' => 'Оновлення оформлення теми «Векторна» з використанням бета-функціоналу',
 	'vector-beta-feature-typography-description' => 'Оновлює оформлення теми «Векторна», щоб покращити чіткість, доступність і однорідність',
+	'vector-beta-feature-compact-personal-bar-message' => 'Компактна персональна смуга',
+	'vector-beta-feature-compact-personal-bar-description' => 'Згортає особисту смугу у спливне меню.',
+	'vector-beta-feature-fixedheader-message' => 'Зима',
+	'vector-beta-feature-fixedheader-description' => 'Перетворює заголовок теми оформлення «Векторний» у фіксований заголовок.',
 );
 
 /** Vietnamese (Tiếng Việt)
@@ -440,6 +446,10 @@ $messages['vi'] = array(
 	'vector-beta-feature-typography-message' => 'Làm mới phông chữ',
 	'vectorbeta-desc' => 'Làm mới các phông chữ trong hình dạng Vectơ dùng hệ thống Tính năng beta',
 	'vector-beta-feature-typography-description' => 'Làm mới các phông chữ trong hình dạng Vectơ để tăng tốc đọc hiểu, trợ năng, và tính nhất quán.',
+	'vector-beta-feature-compact-personal-bar-message' => 'Thu gọn thanh cá nhân',
+	'vector-beta-feature-compact-personal-bar-description' => 'Thu gọn thanh cá nhân thành một trình đơn nổi lên.',
+	'vector-beta-feature-fixedheader-message' => 'Mùa đông',
+	'vector-beta-feature-fixedheader-description' => 'Cố định đầu trang khi cuộn trang trong hình dạng mặc định Vectơ.',
 );
 
 /** Simplified Chinese (中文（简体）‎)
