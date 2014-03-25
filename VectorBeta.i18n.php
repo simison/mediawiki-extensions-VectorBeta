@@ -217,10 +217,11 @@ $messages['he'] = array(
 );
 
 /** Hindi (हिन्दी)
+ * @author Goelujjwal
  * @author Wikiuser13
  */
 $messages['hi'] = array(
-	'vector-beta-feature-fixedheader-message' => 'विंटर',
+	'vector-beta-feature-fixedheader-message' => 'शीतकाल',
 );
 
 /** Croatian (hrvatski)
@@ -286,6 +287,15 @@ $messages['ka'] = array(
 	'vector-beta-feature-typography-message' => 'გაფორმების განახლება',
 	'vectorbeta-desc' => 'ვექტორული გარეკანის გაფორმების განახლება ბეტა-ფუნქციონალის გამოყენებით',
 	'vector-beta-feature-typography-description' => 'ვექტორული გარეკანის გაფორმების განახლება, რათა გაუმჯობესდეს კითხვადობა, მისაწვდომობა და თანმიმდევრობა.',
+);
+
+/** Kazakh (Cyrillic script) (қазақша (кирил)‎)
+ * @author Arystanbek
+ */
+$messages['kk-cyrl'] = array(
+	'vector-beta-feature-typography-message' => 'Безендіру жаңартуы',
+	'vector-beta-feature-typography-description' => 'Оқылуды, қол жетімділікті және бірізділікті жақсарту үшін вектор мәнеріндегі безендіруді жаңартады.',
+	'vector-beta-feature-fixedheader-message' => 'Қыс',
 );
 
 /** Korean (한국어)
