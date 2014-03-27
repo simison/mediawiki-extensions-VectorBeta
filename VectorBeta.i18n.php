@@ -178,6 +178,7 @@ $messages['fi'] = array(
 	'vector-beta-feature-typography-message' => 'Typografiapäivitys',
 	'vectorbeta-desc' => 'Beeta-ominaisuuksien Vector-ulkoasun typografiapäivitys',
 	'vector-beta-feature-typography-description' => 'Päivittää Vector-ulkoasun typografian parantaen luettavuutta, saatavuutta sekä johdonmukaisuutta.',
+	'vector-beta-feature-fixedheader-message' => 'Talvi',
 );
 
 /** French (français)
