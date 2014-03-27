@@ -233,23 +233,25 @@ class VectorBetaHooks {
 
 	static function getPreferences( $user, &$prefs ) {
 		global $wgExtensionAssetsPath, $wgVectorBetaPersonalBar,
-			$wgVectorBetaWinter;
+			$wgVectorBetaTypography, $wgVectorBetaWinter;
 
-		$prefs['betafeatures-vector-typography-update'] = array(
-			'label-message' => 'vector-beta-feature-typography-message',
-			'desc-message' => 'vector-beta-feature-typography-description',
-			'info-link' => 'https://www.mediawiki.org/wiki/Typography_refresh',
-			'discussion-link' => 'https://www.mediawiki.org/wiki/Talk:Typography_refresh',
-			'screenshot' => array(
-				'ltr' => $wgExtensionAssetsPath . '/VectorBeta/typography-beta.svg',
-				'rtl' => $wgExtensionAssetsPath . '/VectorBeta/typography-beta-arab.svg',
-				'he' => $wgExtensionAssetsPath . '/VectorBeta/typography-beta-hebr.svg',
-				'yi' => $wgExtensionAssetsPath . '/VectorBeta/typography-beta-hebr.svg',
-			),
-			'requirements' => array(
-				'skins' => array( 'vector' ),
-			),
-		);
+		if ( $wgVectorBetaTypography ) {
+			$prefs['betafeatures-vector-typography-update'] = array(
+				'label-message' => 'vector-beta-feature-typography-message',
+				'desc-message' => 'vector-beta-feature-typography-description',
+				'info-link' => 'https://www.mediawiki.org/wiki/Typography_refresh',
+				'discussion-link' => 'https://www.mediawiki.org/wiki/Talk:Typography_refresh',
+				'screenshot' => array(
+					'ltr' => $wgExtensionAssetsPath . '/VectorBeta/typography-beta.svg',
+					'rtl' => $wgExtensionAssetsPath . '/VectorBeta/typography-beta-arab.svg',
+					'he' => $wgExtensionAssetsPath . '/VectorBeta/typography-beta-hebr.svg',
+					'yi' => $wgExtensionAssetsPath . '/VectorBeta/typography-beta-hebr.svg',
+				),
+				'requirements' => array(
+					'skins' => array( 'vector' ),
+				),
+			);
+		}
 
 		if ( $wgVectorBetaPersonalBar ) {
 			$prefs['betafeatures-vector-compact-personal-bar'] = array(
@@ -288,8 +290,10 @@ class VectorBetaHooks {
 	 * @return bool
 	 */
 	static function skinVectorStyleModules( $skin, &$modules ) {
+		global $wgVectorBetaTypography;
 		if ( class_exists( 'BetaFeatures' ) ) {
-			$typeEnabled = BetaFeatures::isFeatureEnabled( $skin->getUser(), 'betafeatures-vector-typography-update' );
+			$typeEnabled = $wgVectorBetaTypography &&
+				BetaFeatures::isFeatureEnabled( $skin->getUser(), 'betafeatures-vector-typography-update' );
 			$fixedHeaderEnabled = BetaFeatures::isFeatureEnabled( $skin->getUser(), 'betafeatures-vector-fixedheader' );
 			if ( $typeEnabled ) {
 				$index = array_search( 'skins.vector.styles', $modules );

@@ -42,6 +42,11 @@ $wgVectorBetaPersonalBar = false;
  */
 $wgVectorBetaWinter = false;
 
+/**
+ * Enable Typography experiments.
+ */
+$wgVectorBetaTypography = false;
+
 $wgAutoloadClasses['VectorBetaHooks'] = __DIR__ . '/VectorBeta.hooks.php';
 
 $wgExtensionMessagesFiles['VectorBeta'] = __DIR__ . '/VectorBeta.i18n.php';
