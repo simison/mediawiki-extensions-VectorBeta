@@ -1,69 +1,5 @@
 /* Content */
 div#content {
-	line-height: @content-line-height;
-	.mw-editsection {
-		font-family: @content-font-family;
-	}
-
-	p {
-		line-height: inherit;
-	}
-
-	h1,
-	#firstHeading {
-		font-family: @content-heading-font-family;
-		font-size: 1.8em;
-		line-height: 30pt;
-		padding: 0;
-		margin-bottom: 4pt;
-	}
-
-	h2 {
-		font-size: 1.5em;
-		line-height: 22pt;
-		margin-top: 16pt;
-		font-family: @content-heading-font-family;
-		padding: 0;
-		margin-bottom: 4pt;
-	}
-
-	h3,
-	h4,
-	h5,
-	h6 {
-		margin-top: 3pt;
-		padding-bottom: 0;
-		margin-bottom: 0;
-	}
-
-	h3 {
-		font-size: 1.17em;
-		line-height: 22pt;
-	}
-
-	h3,
-	h4 {
-		font-weight: bold;
-	}
-
-	h4,
-	h5,
-	h6 {
-		font-size: 100%; /* (reset) */
-	}
-
-	h6 {
-		font-style: italic;
-	}
-
-	p {
-		margin-bottom: 8pt;
-	}
-
-	pre {
-		overflow-x: auto;
-	}
-
 	blockquote {
 		font-family: @content-heading-font-family;
 		font-size: 1.1em;
@@ -111,16 +47,6 @@ div#content {
 
 	.tocnumber {
 		display: none;
-	}
-
-	// FIXME: this is hacky
-	#toc h2 {
-		font-size: 100%;
-		font-family: @content-font-family;
-	}
-
-	sup {
-		line-height: 0;
 	}
 }
 
