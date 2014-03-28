@@ -277,8 +277,8 @@ class VectorBetaHooks {
 			$prefs['betafeatures-vector-fixedheader'] = array(
 				'label-message' => 'vector-beta-feature-fixedheader-message',
 				'desc-message' => 'vector-beta-feature-fixedheader-description',
-				'info-link' => '//www.mediawiki.org/wiki/Winter',
-				'discussion-link' => '//www.mediawiki.org/wiki/Talk:Winter',
+				'info-link' => '//www.mediawiki.org/wiki/Fixed header',
+				'discussion-link' => '//www.mediawiki.org/wiki/Talk:Fixed header',
 				// FIXME: Get a screenshot from Jared asap
 				'screenshot' => '',
 				'requirements' => array(

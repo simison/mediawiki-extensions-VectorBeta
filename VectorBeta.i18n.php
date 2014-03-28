@@ -30,7 +30,7 @@ $messages['en'] = array(
 	'vector-beta-feature-typography-description' => 'Updates typography of the Vector skin to improve readability, accessibility and consistency.',
 	'vector-beta-feature-compact-personal-bar-message' => 'Compact personal bar',
 	'vector-beta-feature-compact-personal-bar-description' => 'Collapses personal bar into a flyout menu.',
-	'vector-beta-feature-fixedheader-message' => 'Winter',
+	'vector-beta-feature-fixedheader-message' => 'Fixed header',
 	'vector-beta-feature-fixedheader-description' => 'Turns the header on the default Vector skin into a fixed header.',
 );
 
