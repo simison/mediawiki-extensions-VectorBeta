@@ -63,6 +63,7 @@ $wgResourceModules = array_merge( $wgResourceModules, array(
 		'styles' => array(
 			'resources/fixedHeader/header.less',
 			'resources/fixedHeader/page-actions.less',
+			'resources/fixedHeader/personal-bar.less',
 		),
 		// Other ensures this loads after the Vector skin styles
 		'group' => 'other',
