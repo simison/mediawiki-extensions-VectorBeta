@@ -464,6 +464,7 @@ $messages['vi'] = array(
 );
 
 /** Simplified Chinese (中文（简体）‎)
+ * @author Liuxinyu970226
  * @author Shizhao
  * @author Xiaomingyan
  */
@@ -471,6 +472,10 @@ $messages['zh-hans'] = array(
 	'vector-beta-feature-typography-message' => '排版样式更新',
 	'vectorbeta-desc' => '进行功能测试的Vector皮肤排版样式更新',
 	'vector-beta-feature-typography-description' => '更新Vector皮肤的排版样式，使其易读、易用、样式一致。',
+	'vector-beta-feature-compact-personal-bar-message' => '紧凑个人栏',
+	'vector-beta-feature-compact-personal-bar-description' => '将个人栏整合进一个弹出菜单。',
+	'vector-beta-feature-fixedheader-message' => '冬季',
+	'vector-beta-feature-fixedheader-description' => '在默认的Vector皮肤中启用已修复的标头。',
 );
 
 /** Traditional Chinese (中文（繁體）‎)
