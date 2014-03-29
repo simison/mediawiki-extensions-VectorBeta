@@ -6,5 +6,9 @@
     },
     "vector-beta-feature-typography-message": "Oživení typografie",
     "vectorbeta-desc": "Typografické oživení vzhledu Vektor v rámci betaverze",
-    "vector-beta-feature-typography-description": "Aktualizuje typografii vzhledu Vektor pro vylepšení čitelnosti, přístupnosti a konzistence."
+    "vector-beta-feature-typography-description": "Aktualizuje typografii vzhledu Vektor pro vylepšení čitelnosti, přístupnosti a konzistence.",
+    "vector-beta-feature-compact-personal-bar-message": "Kompaktní osobní nástroje",
+    "vector-beta-feature-compact-personal-bar-description": "Sbalí pruh osobních nástrojů do rozbalovacího menu",
+    "vector-beta-feature-fixedheader-message": "Pevné záhlaví",
+    "vector-beta-feature-fixedheader-description": "Změní záhlaví v implicitním stylu Vektor na pevné."
 }
