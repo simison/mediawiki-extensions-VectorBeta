@@ -49,6 +49,7 @@ $wgVectorBetaTypography = false;
 
 $wgAutoloadClasses['VectorBetaHooks'] = __DIR__ . '/VectorBeta.hooks.php';
 
+$wgMessagesDirs['VectorBeta'] = __DIR__ . '/i18n';
 $wgExtensionMessagesFiles['VectorBeta'] = __DIR__ . '/VectorBeta.i18n.php';
 
 $wgResourceModules = array_merge( $wgResourceModules, array(

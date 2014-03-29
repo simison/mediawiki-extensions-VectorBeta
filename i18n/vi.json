@@ -1,0 +1,14 @@
+{
+    "@metadata": {
+        "authors": [
+            "Minh Nguyen"
+        ]
+    },
+    "vector-beta-feature-typography-message": "Làm mới phông chữ",
+    "vectorbeta-desc": "Làm mới các phông chữ trong hình dạng Vectơ dùng hệ thống Tính năng beta",
+    "vector-beta-feature-typography-description": "Làm mới các phông chữ trong hình dạng Vectơ để tăng tốc đọc hiểu, trợ năng, và tính nhất quán.",
+    "vector-beta-feature-compact-personal-bar-message": "Thu gọn thanh cá nhân",
+    "vector-beta-feature-compact-personal-bar-description": "Thu gọn thanh cá nhân thành một trình đơn nổi lên.",
+    "vector-beta-feature-fixedheader-message": "Mùa đông",
+    "vector-beta-feature-fixedheader-description": "Cố định đầu trang khi cuộn trang trong hình dạng mặc định Vectơ."
+}

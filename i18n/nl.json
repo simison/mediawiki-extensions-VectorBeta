@@ -1,0 +1,14 @@
+{
+    "@metadata": {
+        "authors": [
+            "Siebrand"
+        ]
+    },
+    "vector-beta-feature-typography-message": "Typografievernieuwing",
+    "vectorbeta-desc": "Typografievernieuwing van de vormgeving Vector via Betafuncties",
+    "vector-beta-feature-typography-description": "Werkt de typografie van het uiterlijk Vector bij om de leesbaarheid, toegankelijkheid en consistentie te verbeteren.",
+    "vector-beta-feature-compact-personal-bar-message": "Compacte persoonlijke werkbalk",
+    "vector-beta-feature-compact-personal-bar-description": "Klapt de persoonlijke werkbalk samen tot een submenu.",
+    "vector-beta-feature-fixedheader-message": "Winter",
+    "vector-beta-feature-fixedheader-description": "Verandert het horizontale menu van het uiterlijk Vector in een vast menu."
+}
