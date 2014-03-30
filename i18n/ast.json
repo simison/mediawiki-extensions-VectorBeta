@@ -6,5 +6,9 @@
     },
     "vector-beta-feature-typography-message": "Actualización tipográfica",
     "vectorbeta-desc": "Actualización tipográfica de la piel Vector usando les carauterístiques Beta",
-    "vector-beta-feature-typography-description": "Actualiza la tipografía de la piel Vector p'ameyorar la lleibilidá, accesibilidá y consistencia."
+    "vector-beta-feature-typography-description": "Actualiza la tipografía de la piel Vector p'ameyorar la lleibilidá, accesibilidá y consistencia.",
+    "vector-beta-feature-compact-personal-bar-message": "Barra personal compacta",
+    "vector-beta-feature-compact-personal-bar-description": "Contrái la barra personal a un menú emerxente.",
+    "vector-beta-feature-fixedheader-message": "Cabecera fixa",
+    "vector-beta-feature-fixedheader-description": "Convierte la cabecera del aspeutu predetermináu Vector nuna cabecera fixa."
 }
