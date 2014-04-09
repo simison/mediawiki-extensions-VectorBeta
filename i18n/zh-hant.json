@@ -1,10 +1,11 @@
 {
     "@metadata": {
         "authors": [
-            "Liuxinyu970226"
+            "Liuxinyu970226",
+            "Liangent"
         ]
     },
-    "vector-beta-feature-typography-message": "排版刷新",
+    "vector-beta-feature-typography-message": "排版樣式更新",
     "vectorbeta-desc": "經由測試功能之Vector皮膚排版刷新",
-    "vector-beta-feature-typography-description": "更新Vector皮膚排版以改進可閱讀性、可連接性與一致性。"
+    "vector-beta-feature-typography-description": "更新Vector外觀的排版樣式，以改進可讀性、可用性與一致性。"
 }
