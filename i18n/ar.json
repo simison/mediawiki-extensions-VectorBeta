@@ -1,9 +1,9 @@
 {
-    "@metadata": {
-        "authors": [
-            "Asaifm"
-        ]
-    },
-    "vector-beta-feature-typography-message": "تحديث الطباعة",
-    "vector-beta-feature-typography-description": "يعمل الإمتداد على تحديث وتنقيح أسلوب الطباعة الخاص بواجهة فكتور لتحسين المقروئية (سهولة القراءة) والموصولية (إمكانية الوصول لأي معلومة) والحفاظ على إتساق الخطوط."
+	"@metadata": {
+		"authors": [
+			"Asaifm"
+		]
+	},
+	"vector-beta-feature-typography-message": "تحديث الطباعة",
+	"vector-beta-feature-typography-description": "يعمل الإمتداد على تحديث وتنقيح أسلوب الطباعة الخاص بواجهة فكتور لتحسين المقروئية (سهولة القراءة) والموصولية (إمكانية الوصول لأي معلومة) والحفاظ على إتساق الخطوط."
 }

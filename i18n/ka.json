@@ -1,10 +1,10 @@
 {
-    "@metadata": {
-        "authors": [
-            "Otogi"
-        ]
-    },
-    "vector-beta-feature-typography-message": "გაფორმების განახლება",
-    "vectorbeta-desc": "ვექტორული გარეკანის გაფორმების განახლება ბეტა-ფუნქციონალის გამოყენებით",
-    "vector-beta-feature-typography-description": "ვექტორული გარეკანის გაფორმების განახლება, რათა გაუმჯობესდეს კითხვადობა, მისაწვდომობა და თანმიმდევრობა."
+	"@metadata": {
+		"authors": [
+			"Otogi"
+		]
+	},
+	"vector-beta-feature-typography-message": "გაფორმების განახლება",
+	"vectorbeta-desc": "ვექტორული გარეკანის გაფორმების განახლება ბეტა-ფუნქციონალის გამოყენებით",
+	"vector-beta-feature-typography-description": "ვექტორული გარეკანის გაფორმების განახლება, რათა გაუმჯობესდეს კითხვადობა, მისაწვდომობა და თანმიმდევრობა."
 }

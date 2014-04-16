@@ -1,12 +1,12 @@
 {
-    "@metadata": {
-        "authors": [
-            "Meelo",
-            "SiLveRLeaD"
-        ]
-    },
-    "vector-beta-feature-typography-message": "Baskı (tipografi) yenileme",
-    "vectorbeta-desc": "Beta Özellikle kullanarak Vector görünümünde \"Baski (tipografi) yenileme\" kullanma",
-    "vector-beta-feature-typography-description": "Okunabilirliği, erişilebilirliği ve tutarlılığı artırmak için Vector görünümüne \"Baskı (tipografi) yenileme\" yükleyin.",
-    "vector-beta-feature-fixedheader-message": "Kış"
+	"@metadata": {
+		"authors": [
+			"Meelo",
+			"SiLveRLeaD"
+		]
+	},
+	"vector-beta-feature-typography-message": "Baskı (tipografi) yenileme",
+	"vectorbeta-desc": "Beta Özellikle kullanarak Vector görünümünde \"Baski (tipografi) yenileme\" kullanma",
+	"vector-beta-feature-typography-description": "Okunabilirliği, erişilebilirliği ve tutarlılığı artırmak için Vector görünümüne \"Baskı (tipografi) yenileme\" yükleyin.",
+	"vector-beta-feature-fixedheader-message": "Kış"
 }

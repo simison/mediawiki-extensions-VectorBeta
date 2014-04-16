@@ -1,14 +1,14 @@
 {
-    "@metadata": {
-        "authors": [
-            "Amire80"
-        ]
-    },
-    "vector-beta-feature-typography-message": "עדכון גופנים",
-    "vectorbeta-desc": "עדכון גופנים בעיצוב וקטור באמצעות אפשרויות בטא",
-    "vector-beta-feature-typography-description": "עדכון גופנים לשם שיפור בקריאוּת, בנגישות ובעקיבות.",
-    "vector-beta-feature-compact-personal-bar-message": "סרגל אישי מוקטן",
-    "vector-beta-feature-compact-personal-bar-description": "מצמצם את הסרגל האישי לתפריט מרחף",
-    "vector-beta-feature-fixedheader-message": "כותרת קבועה",
-    "vector-beta-feature-fixedheader-description": "הפיכת הסרגל העליון של עיצוב וקטור לסרגל קבוע."
+	"@metadata": {
+		"authors": [
+			"Amire80"
+		]
+	},
+	"vector-beta-feature-typography-message": "עדכון גופנים",
+	"vectorbeta-desc": "עדכון גופנים בעיצוב וקטור באמצעות אפשרויות בטא",
+	"vector-beta-feature-typography-description": "עדכון גופנים לשם שיפור בקריאוּת, בנגישות ובעקיבות.",
+	"vector-beta-feature-compact-personal-bar-message": "סרגל אישי מוקטן",
+	"vector-beta-feature-compact-personal-bar-description": "מצמצם את הסרגל האישי לתפריט מרחף",
+	"vector-beta-feature-fixedheader-message": "כותרת קבועה",
+	"vector-beta-feature-fixedheader-description": "הפיכת הסרגל העליון של עיצוב וקטור לסרגל קבוע."
 }

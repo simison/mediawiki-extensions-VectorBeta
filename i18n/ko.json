@@ -1,10 +1,10 @@
 {
-    "@metadata": {
-        "authors": [
-            "아라"
-        ]
-    },
-    "vector-beta-feature-typography-message": "타이포그래피 새로 고침",
-    "vectorbeta-desc": "베타기능을 사용하여 벡터 스킨의 타이포그래피를 새로 고칩니다",
-    "vector-beta-feature-typography-description": "가독성, 접근성과 일관성을 개선하기 위해 벡터 스킨의 타이포그래피를 업데이트합니다."
+	"@metadata": {
+		"authors": [
+			"아라"
+		]
+	},
+	"vector-beta-feature-typography-message": "타이포그래피 새로 고침",
+	"vectorbeta-desc": "베타기능을 사용하여 벡터 스킨의 타이포그래피를 새로 고칩니다",
+	"vector-beta-feature-typography-description": "가독성, 접근성과 일관성을 개선하기 위해 벡터 스킨의 타이포그래피를 업데이트합니다."
 }

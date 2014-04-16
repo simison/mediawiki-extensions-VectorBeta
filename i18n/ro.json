@@ -1,10 +1,10 @@
 {
-    "@metadata": {
-        "authors": [
-            "Minisarm"
-        ]
-    },
-    "vector-beta-feature-typography-message": "Reîmprospătarea interfeței tipografice",
-    "vectorbeta-desc": "Reîmprospătarea interfeței tipografie a temei Vector folosind funcțiile beta",
-    "vector-beta-feature-typography-description": "Actualizează interfața tipografică a temei Vector pentru a îmbunătăți lizibilitatea, accesibilitatea și coerența."
+	"@metadata": {
+		"authors": [
+			"Minisarm"
+		]
+	},
+	"vector-beta-feature-typography-message": "Reîmprospătarea interfeței tipografice",
+	"vectorbeta-desc": "Reîmprospătarea interfeței tipografie a temei Vector folosind funcțiile beta",
+	"vector-beta-feature-typography-description": "Actualizează interfața tipografică a temei Vector pentru a îmbunătăți lizibilitatea, accesibilitatea și coerența."
 }

@@ -1,15 +1,15 @@
 {
-    "@metadata": {
-        "authors": [
-            "Kghbln",
-            "Metalhead64"
-        ]
-    },
-    "vector-beta-feature-typography-message": "Typografieaktualisierung",
-    "vectorbeta-desc": "Ermöglicht bei der Benutzeroberfläche „Vector“ Schriftartänderungen",
-    "vector-beta-feature-typography-description": "Aktualisiert die Typografie des Vector-Skins zur Verbesserung der Lesbarkeit, Barrierefreiheit und Konsistenz.",
-    "vector-beta-feature-compact-personal-bar-message": "Kompakte persönliche Werkzeugleiste",
-    "vector-beta-feature-compact-personal-bar-description": "Klappt die persönliche Werkzeugleiste in ein Flyout-Menü ein.",
-    "vector-beta-feature-fixedheader-message": "Feste Kopfzeile",
-    "vector-beta-feature-fixedheader-description": "Fixiert die Kopfzeile in der Standard-Vector-Benutzeroberfläche."
+	"@metadata": {
+		"authors": [
+			"Kghbln",
+			"Metalhead64"
+		]
+	},
+	"vector-beta-feature-typography-message": "Typografieaktualisierung",
+	"vectorbeta-desc": "Ermöglicht bei der Benutzeroberfläche „Vector“ Schriftartänderungen",
+	"vector-beta-feature-typography-description": "Aktualisiert die Typografie des Vector-Skins zur Verbesserung der Lesbarkeit, Barrierefreiheit und Konsistenz.",
+	"vector-beta-feature-compact-personal-bar-message": "Kompakte persönliche Werkzeugleiste",
+	"vector-beta-feature-compact-personal-bar-description": "Klappt die persönliche Werkzeugleiste in ein Flyout-Menü ein.",
+	"vector-beta-feature-fixedheader-message": "Feste Kopfzeile",
+	"vector-beta-feature-fixedheader-description": "Fixiert die Kopfzeile in der Standard-Vector-Benutzeroberfläche."
 }
