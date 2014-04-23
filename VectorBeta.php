@@ -73,11 +73,11 @@ $wgResourceModules = array_merge( $wgResourceModules, array(
 			'jquery.throttle-debounce',
 		),
 		'scripts' => array(
-			'resources/fixedheader/header.js',
-			'resources/fixedheader/hamburger.js',
+			'resources/fixedHeader/header.js',
+			'resources/fixedHeader/hamburger.js',
 		),
 		'styles' => array(
-			'resources/fixedheader/search-suggestions.less',
+			'resources/fixedHeader/search-suggestions.less',
 		),
 	),
 
