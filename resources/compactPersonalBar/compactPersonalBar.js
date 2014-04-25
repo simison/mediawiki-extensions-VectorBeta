@@ -69,7 +69,7 @@
 	};
 
 	bar = new CompactMenu( 'compact-bar', ['main'] );
-	menu = new CompactMenu( 'compact-flyout', ['user', 'interactions', 'portlets', 'preferences', 'end'] );
+	menu = new CompactMenu( 'compact-flyout', ['user', 'interactions', 'portlets', 'preferences', 'info', 'end'] );
 
 	mw.util.addPortletLink = function( portlet, href, text, id, tooltip, accesskey ) {
 		var $a, $li;
@@ -119,11 +119,11 @@
 			addItem( 'interactions', 'watchlist', $( '#pt-watchlist' ) ).
 			addItem( 'preferences', 'preferences', $( '#pt-preferences' ) ).
 			addItem( 'preferences', 'beta', $( '#pt-betafeatures' ) ).
-			addItem( 'end', 'privacy', createItem( {
+			addItem( 'info', 'privacy', createItem( {
 				text: mw.msg( 'privacy' ),
 				href: mw.util.getUrl( mw.msg( 'privacypage' ) )
 			} ) ).
-			addItem( 'end', 'help', createItem( {
+			addItem( 'info', 'help', createItem( {
 				text: mw.msg( 'help' ),
 				href: mw.util.getUrl( mw.msg( 'helppage' ) )
 			} ) ).
