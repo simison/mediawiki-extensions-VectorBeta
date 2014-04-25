@@ -270,6 +270,13 @@ class VectorBetaHooks {
 					'ltr' => "$wgExtensionAssetsPath/VectorBeta/compactPersonalBar-ltr.svg",
 					'rtl' => "$wgExtensionAssetsPath/VectorBeta/compactPersonalBar-rtl.svg",
 				),
+				'requirements' => array(
+					'skins' => array( 'vector' ),
+					'javascript' => true,
+					'blacklist' => array(
+						'msie' => null,
+					),
+				),
 			);
 		}
 
