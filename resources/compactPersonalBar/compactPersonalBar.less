@@ -17,24 +17,53 @@
 		padding: 0;
 	}
 
-	#pt-flyout {
+	li {
 		// FIXME: overrides for Vector styles
-		margin-top: .1em;
+		margin-top: 0;
+	}
 
+	#pt-flyout {
+		// prevent bar elements from jumping when flyout expanded
+		max-height: 2.2em;
+	}
+
+	#pt-flyout > div {
 		padding: 0 .2em;
 		border: 1px solid #ccc;
 		border-radius: 3px;
 
-		.transition(0s (@fadeDuration + @fadeDelay));
+		.transition(background @fadeDuration @fadeDelay, border-color @fadeDuration @fadeDelay;);
 
 		&:hover {
 			border-color: #aaa;
 			background: #fff;
-
-			.transition(background @fadeDuration @fadeDelay, border-color @fadeDuration @fadeDelay;);
 		}
 
-		li {
+		ul {
+			// can't use display: none because it's not animatable
+			max-height: 0;
+			opacity: 0;
+			overflow: hidden;
+
+			.transition(max-height @fadeDuration @fadeDelay, opacity @fadeDuration @fadeDelay;);
+		}
+
+		&:hover ul {
+			max-height: 30em;
+			opacity: 1;
+		}
+
+		a {
+			display: block;
+			padding: .5em 2.1em;
+			border-radius: 2px;
+			color: #000;
+			text-decoration: none;
+			background-size: 24px 24px;
+			background-repeat: no-repeat;
+		}
+
+	  li {
 			// FIXME: overrides for Vector styles
 			float: none;
 			font-size: 1em;
@@ -42,31 +71,9 @@
 			padding: 0 !important;
 			background: none;
 
-			a {
-				display: block;
-				padding: .4em 2.1em;
-				border-radius: 2px;
-				color: #000;
-				text-decoration: none;
-				background-size: 24px 24px;
-				background-repeat: no-repeat;
-			}
-		}
-
-		// more widely supported than li:not(:first-child)
-		li:first-child ~ li {
-			// can't use display: none because it's not animatable
-			max-height: 0;
-			visibility: none;
-			opacity: 0;
-			overflow: hidden;
-
-			// needed for the transition to work properly, see also :hover
 			&.group-start {
-				border-top: 0 solid #ededed;
+				border-top: 1px solid #ededed;
 			}
-
-			.transition(0s (@fadeDuration + @fadeDelay));
 
 			a {
 				margin: .2em 0;
@@ -75,8 +82,8 @@
 					display: inline-block;
 					float: right;
 					width: 1.6em;
-					padding: .2em 0;
-					margin: -.2em -1.6em 0 0;
+					padding: .3em 0;
+					margin: -.3em -1.6em 0 0;
 					text-align: center;
 					font-weight: bold;
 					color: #aaa;
@@ -94,22 +101,46 @@
 				}
 			}
 		}
-
-		&:hover li:first-child ~ li {
-			max-height: 9999px;
-			visibility: visible;
-			opacity: 1;
-
-			&.group-start {
-				border-top-width: 1px;
-			}
-
-			.transition(border-top 0s @fadeDelay, max-height 0s @fadeDelay, opacity @fadeDuration @fadeDelay;);
-		}
 	}
 }
 
-#pt-userpage a {
+#p-personal > div > ul > li {
+	vertical-align: middle;
+	display: inline-block;
+	float: none;
+}
+
+#pt-watchlist a, #pt-mytalk a {
+	// FIXME: overrides for yellow bar
+	background-color: transparent !important;
+	padding: 0 !important;
+
+	display: block;
+	text-indent: -9999px;
+	overflow: hidden;
+	width: 32px;
+	height: 32px;
+	background-size: 32px 32px;
+}
+
+#pt-notifications {
+	// FIXME: overrides for weird echo badge styling
+	margin: 0 .8em 0 1.6em !important;
+
+	a {
+		display: block;
+	}
+}
+
+#pt-watchlist a {
+	.background-image-svg("images/watchlist.svg", "images/watchlist.png");
+}
+
+#pt-mytalk a {
+	.background-image-svg("images/talk.svg", "images/talk.png");
+}
+
+#pt-flyout div > a {
 	.background-image-svg("images/user.svg", "images/user.png");
 }
 
@@ -121,11 +152,11 @@
 	.background-icon("notifications");
 }
 
-#pt-mytalk a {
+#pt-mytalk-flyout a {
 	.background-icon("talk");
 }
 
-#pt-watchlist a {
+#pt-watchlist-flyout a {
 	.background-icon("watchlist");
 }
 

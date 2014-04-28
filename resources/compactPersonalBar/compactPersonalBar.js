@@ -27,7 +27,8 @@
 	function CompactMenu( name, groups ) {
 		var self = this;
 
-		this.$el = $( '<ul>' );
+		this.$list = $( '<ul>' );
+		this.$el = $( '<div>' ).append( this.$list );
 		this.name = name;
 		this.order = groups;
 		this.items = {};
@@ -58,18 +59,23 @@
 	CompactMenu.prototype.render = function() {
 		var self = this;
 
-		// we don't have to do this.$el.empty() because elements won't get cloned
-		// anyway (plus empty() would remove all click tracking callbacks)
+		if ( this.items.heading ) {
+			this.$el.prepend( this.items.heading[0] );
+		}
 
+		// we don't have to do this.$list.empty() because elements won't get cloned
+		// anyway (plus empty() would remove all click tracking callbacks)
 		$.each( this.order, function() {
-			$.each( self.items[this], function() {
-				self.$el.append( this );
-			} );
+			if ( this !== 'heading' ) {
+				$.each( self.items[this], function() {
+					self.$list.append( this );
+				} );
+			}
 		} );
 	};
 
 	bar = new CompactMenu( 'compact-bar', ['main'] );
-	menu = new CompactMenu( 'compact-flyout', ['user', 'interactions', 'portlets', 'preferences', 'info', 'end'] );
+	menu = new CompactMenu( 'compact-flyout', ['heading', 'interactions', 'portlets', 'preferences', 'info', 'end'] );
 
 	mw.util.addPortletLink = function( portlet, href, text, id, tooltip, accesskey ) {
 		var $a, $li;
@@ -105,7 +111,7 @@
 		var $barContainer = $( '#p-personal' );
 
 		menu.
-			addItem( 'user', 'user-page', $( '#pt-userpage' ) ).
+			addItem( 'heading', 'user-page', $( '#pt-userpage' ).find( 'a' ) ).
 			addItem( 'interactions', 'contributions', $( '#pt-mycontris' ) ).
 			// notifications item can't be simply cloned, markup has to be changed
 			// and label added
@@ -115,8 +121,8 @@
 				count: $( '#pt-notifications' ).text(),
 				href: $( '#pt-notifications' ).find( 'a' ).attr( 'href' )
 			} ) ).
-			addItem( 'interactions', 'talk', $( '#pt-mytalk' ) ).
-			addItem( 'interactions', 'watchlist', $( '#pt-watchlist' ) ).
+			addItem( 'interactions', 'talk', $( '#pt-mytalk' ).clone().attr( 'id', 'pt-mytalk-flyout' ) ).
+			addItem( 'interactions', 'watchlist', $( '#pt-watchlist' ).clone().attr( 'id', 'pt-watchlist-flyout' ) ).
 			addItem( 'preferences', 'preferences', $( '#pt-preferences' ) ).
 			addItem( 'preferences', 'beta', $( '#pt-betafeatures' ) ).
 			addItem( 'info', 'privacy', createItem( {
@@ -131,6 +137,8 @@
 
 		bar.
 			addItem( 'main', 'language', $( '#pt-uls' ) ).
+			addItem( 'main', 'watchlist', $( '#pt-watchlist' ) ).
+			addItem( 'main', 'talk', $( '#pt-mytalk' ) ).
 			addItem( 'main', 'notifications', $( '#pt-notifications' ) ).
 			addItem( 'main', null, menu.$el.wrap( '<li id="pt-flyout">' ).parent() );
 
