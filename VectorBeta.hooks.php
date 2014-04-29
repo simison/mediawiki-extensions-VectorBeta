@@ -53,6 +53,16 @@ class VectorBetaHooks {
 	}
 
 	/**
+	 * Checks whether fixed header experiment can be run or not
+	 * @param User $user
+	 * @return bool
+	 */
+	static function isFixedHeaderEnabled( $user ) {
+		global $wgVectorBetaWinter;
+		return $wgVectorBetaWinter && BetaFeatures::isFeatureEnabled( $user, 'betafeatures-vector-fixedheader' );
+	}
+
+	/**
 	 * GetSkinTemplateOutputPageBeforeExec
 	 * Modifies the template to swap out the default navigation controls with new Winter
 	 * ones.
@@ -71,7 +81,7 @@ class VectorBetaHooks {
 		if ( !class_exists( 'BetaFeatures' ) ) {
 			wfDebugLog( 'VectorBeta', 'The BetaFeatures extension is not installed' );
 			return true;
-		} else if ( BetaFeatures::isFeatureEnabled( $skin->getUser(), 'betafeatures-vector-fixedheader' ) ) {
+		} else if ( self::isFixedHeaderEnabled( $skin->getUser() ) ) {
 			$data = $tpl->data;
 			$skin = $data['skin'];
 			$nav = $data['content_navigation'];
@@ -305,10 +315,11 @@ class VectorBetaHooks {
 	 */
 	static function skinVectorStyleModules( $skin, &$modules ) {
 		global $wgVectorBetaTypography;
+
 		if ( class_exists( 'BetaFeatures' ) ) {
 			$typeEnabled = $wgVectorBetaTypography &&
 				BetaFeatures::isFeatureEnabled( $skin->getUser(), 'betafeatures-vector-typography-update' );
-			$fixedHeaderEnabled = BetaFeatures::isFeatureEnabled( $skin->getUser(), 'betafeatures-vector-fixedheader' );
+
 			if ( $typeEnabled ) {
 				$index = array_search( 'skins.vector.styles', $modules );
 				if ( $index !== false ) {
@@ -316,7 +327,7 @@ class VectorBetaHooks {
 				}
 				$modules[] = 'skins.vector.beta';
 			}
-			if ( $fixedHeaderEnabled ) {
+			if ( self::isFixedHeaderEnabled( $skin->getUser() ) ) {
 				$modules[] = 'skins.vector.header.beta';
 			}
 		} else {
@@ -343,7 +354,7 @@ class VectorBetaHooks {
 			$modules = array();
 
 			// Fixed header experiment modules
-			if ( BetaFeatures::isFeatureEnabled( $user, 'betafeatures-vector-fixedheader' ) ) {
+			if ( self::isFixedHeaderEnabled( $user ) ) {
 				$modules[] = 'skins.vector.headerjs.beta';
 			}
 
