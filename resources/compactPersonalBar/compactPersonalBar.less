@@ -31,12 +31,15 @@
 		padding: 0 .2em;
 		border: 1px solid #ccc;
 		border-radius: 3px;
+		background: right .5em top .6em no-repeat;
+		background-size: auto 10px;
+		.background-image-svg("images/carat.svg", "images/carat.png");
 
-		.transition(background @fadeDuration @fadeDelay, border-color @fadeDuration @fadeDelay;);
+		.transition(background-color @fadeDuration @fadeDelay, border-color @fadeDuration @fadeDelay;);
 
 		&:hover {
 			border-color: #aaa;
-			background: #fff;
+			background-color: #fff;
 		}
 
 		ul {
