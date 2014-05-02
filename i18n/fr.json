@@ -2,14 +2,15 @@
 	"@metadata": {
 		"authors": [
 			"Gomoko",
-			"Maxim21"
+			"Maxim21",
+			"Scoopfinder"
 		]
 	},
 	"vector-beta-feature-typography-message": "Actualisation de la typographie",
 	"vectorbeta-desc": "Actualisation de la typographie de l’habillage Vector en utilisant les fonctionnalités bêta",
 	"vector-beta-feature-typography-description": "Mettre à jour la typographie de l’habillage Vector en améliorant la lisibilité, l’accessibilité et la cohérence.",
 	"vector-beta-feature-compact-personal-bar-message": "Barre personnelle compacte",
-	"vector-beta-feature-compact-personal-bar-description": "Replie la barre personnelle dans un menu déroulant.",
+	"vector-beta-feature-compact-personal-bar-description": "Nettoyer et organiser les accès aux listes de suivi, notifications et pages de discussion. Une entête simplifiée avec un accès aux outils quand vous en avez besoin.",
 	"vector-beta-feature-fixedheader-message": "Entête corrigé",
 	"vector-beta-feature-fixedheader-description": "Fixe l’entête de l’habillage Vecteur à un entête fixe."
 }
