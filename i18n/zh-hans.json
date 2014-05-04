@@ -8,9 +8,9 @@
 	},
 	"vector-beta-feature-typography-message": "排版样式更新",
 	"vectorbeta-desc": "进行功能测试的Vector皮肤排版样式更新",
-	"vector-beta-feature-typography-description": "更新Vector皮肤的排版样式，使其易读、易用、样式一致。",
-	"vector-beta-feature-compact-personal-bar-message": "紧凑个人栏",
-	"vector-beta-feature-compact-personal-bar-description": "将个人栏整合进一个弹出菜单。",
-	"vector-beta-feature-fixedheader-message": "已修复标头",
-	"vector-beta-feature-fixedheader-description": "在默认的Vector皮肤中启用已修复的标头。"
+	"vector-beta-feature-typography-description": "更新Vector皮肤的版式，使其易读、易用、样式一致。",
+	"vector-beta-feature-compact-personal-bar-message": "简洁的用户栏",
+	"vector-beta-feature-compact-personal-bar-description": "更加干净有序的访问监视列表、通知以及对话页。将个人栏整合进一个弹出菜单。在网站头部将你需要使用的工具都紧凑的放在一起。",
+	"vector-beta-feature-fixedheader-message": "固定页眉",
+	"vector-beta-feature-fixedheader-description": "在默认的Vector皮肤中启用固定页眉。"
 }
