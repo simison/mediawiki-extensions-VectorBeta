@@ -6,5 +6,9 @@
 	},
 	"vector-beta-feature-typography-message": "Reîmprospătarea interfeței tipografice",
 	"vectorbeta-desc": "Reîmprospătarea interfeței tipografie a temei Vector folosind funcțiile beta",
-	"vector-beta-feature-typography-description": "Actualizează interfața tipografică a temei Vector pentru a îmbunătăți lizibilitatea, accesibilitatea și coerența."
+	"vector-beta-feature-typography-description": "Actualizează interfața tipografică a temei Vector pentru a îmbunătăți lizibilitatea, accesibilitatea și coerența.",
+	"vector-beta-feature-compact-personal-bar-message": "Bară compactă personală",
+	"vector-beta-feature-compact-personal-bar-description": "Acces simplu și organizat la lista de pagini urmărite, notificări și pagina de discuții. Un antet simplificat cu acces la instrumente și opțiuni atunci când aveți nevoie.",
+	"vector-beta-feature-fixedheader-message": "Antet fix",
+	"vector-beta-feature-fixedheader-description": "Transformă antetul din interfața implicită Vector într-un antet fix."
 }
