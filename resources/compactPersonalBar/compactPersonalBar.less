@@ -23,8 +23,8 @@
 	}
 
 	#pt-flyout {
-		// prevent bar elements from jumping when flyout expanded
-		max-height: 2.2em;
+		line-height: 1.125em;
+		margin-top: .3em;
 
 		// Set correct alignment in Firefox in RTL wikis.
 		// This shouldn't be needed, but Firefox has a bug with this.
@@ -114,9 +114,10 @@
 }
 
 #p-personal > div > ul > li {
-	vertical-align: middle;
+	vertical-align: top;
 	display: inline-block;
 	float: none;
+	line-height: 32px; /* same as the images, important for ULS */
 }
 
 #pt-watchlist a, #pt-mytalk a {
