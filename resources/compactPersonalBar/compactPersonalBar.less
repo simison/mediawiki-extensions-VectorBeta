@@ -25,6 +25,11 @@
 	#pt-flyout {
 		// prevent bar elements from jumping when flyout expanded
 		max-height: 2.2em;
+
+		// Set correct alignment in Firefox in RTL wikis.
+		// This shouldn't be needed, but Firefox has a bug with this.
+		// See https://bugzilla.wikimedia.org/show_bug.cgi?id=65476
+		text-align: left;
 	}
 
 	#pt-flyout > div {
