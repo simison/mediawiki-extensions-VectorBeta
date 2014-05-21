@@ -359,10 +359,10 @@ class VectorBetaHooks {
 			}
 
 			// Compact Personal Bar modules
-			$modules[] = 'skins.vector.compactPersonalBar.defaultTracking';
-
 			if ( BetaFeatures::isFeatureEnabled( $user, 'betafeatures-vector-compact-personal-bar' ) ) {
 				$modules[] = 'skins.vector.compactPersonalBar';
+			} elseif ( $user->isLoggedIn() ) {
+				$modules[] = 'skins.vector.compactPersonalBar.defaultTracking';
 			}
 
 			$out->addModules( $modules );
