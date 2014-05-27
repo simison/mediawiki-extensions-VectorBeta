@@ -321,10 +321,6 @@ class VectorBetaHooks {
 				BetaFeatures::isFeatureEnabled( $skin->getUser(), 'betafeatures-vector-typography-update' );
 
 			if ( $typeEnabled ) {
-				$index = array_search( 'skins.vector.styles', $modules );
-				if ( $index !== false ) {
-					array_splice( $modules, $index, 1 );
-				}
 				$modules[] = 'skins.vector.beta';
 			}
 			if ( self::isFixedHeaderEnabled( $skin->getUser() ) ) {
