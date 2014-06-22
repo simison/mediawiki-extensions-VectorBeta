@@ -121,6 +121,7 @@
 				count: $( '#pt-notifications' ).text(),
 				href: $( '#pt-notifications' ).find( 'a' ).attr( 'href' )
 			} ) ).
+			addItem( 'interactions', 'newmessages', $( '#pt-newmessages' ).clone().attr( 'id', 'pt-newmessages-flyout' ) ).
 			addItem( 'interactions', 'talk', $( '#pt-mytalk' ).clone().attr( 'id', 'pt-mytalk-flyout' ) ).
 			addItem( 'interactions', 'watchlist', $( '#pt-watchlist' ).clone().attr( 'id', 'pt-watchlist-flyout' ) ).
 			addItem( 'preferences', 'preferences', $( '#pt-preferences' ) ).
@@ -137,6 +138,7 @@
 
 		bar.
 			addItem( 'main', 'language', $( '#pt-uls' ) ).
+			addItem( 'main', 'newmessages', $( '#pt-newmessages' ) ).
 			addItem( 'main', 'watchlist', $( '#pt-watchlist' ) ).
 			addItem( 'main', 'talk', $( '#pt-mytalk' ) ).
 			addItem( 'main', 'notifications', $( '#pt-notifications' ) ).
