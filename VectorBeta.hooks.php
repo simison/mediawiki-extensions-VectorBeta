@@ -34,7 +34,7 @@ class VectorBetaHooks {
 			$className .= 'mw-menu-item mw-icon mw-' . $key . '-icon';
 			if ( strpos( $item['id'], 'ca-nstab' ) === 0 ) {
 				$className .= ' mw-page-icon';
-			} elseif ( $item['id'] = 'ca-talk' ) {
+			} elseif ( $item['id'] == 'ca-talk' ) {
 				$className .= ' mw-talk-icon';
 			}
 			$htmlMenu .= Html::openElement( 'li', array(
