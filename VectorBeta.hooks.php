@@ -34,7 +34,7 @@ class VectorBetaHooks {
 			$className .= 'mw-menu-item mw-icon mw-' . $key . '-icon';
 			if ( strpos( $item['id'], 'ca-nstab' ) === 0 ) {
 				$className .= ' mw-page-icon';
-			} else if ( $item['id'] = 'ca-talk' ) {
+			} elseif ( $item['id'] = 'ca-talk' ) {
 				$className .= ' mw-talk-icon';
 			}
 			$htmlMenu .= Html::openElement( 'li', array(
@@ -59,7 +59,8 @@ class VectorBetaHooks {
 	 */
 	static function isFixedHeaderEnabled( $user ) {
 		global $wgVectorBetaWinter;
-		return $wgVectorBetaWinter && BetaFeatures::isFeatureEnabled( $user, 'betafeatures-vector-fixedheader' );
+		return $wgVectorBetaWinter &&
+			BetaFeatures::isFeatureEnabled( $user, 'betafeatures-vector-fixedheader' );
 	}
 
 	/**
@@ -81,7 +82,7 @@ class VectorBetaHooks {
 		if ( !class_exists( 'BetaFeatures' ) ) {
 			wfDebugLog( 'VectorBeta', 'The BetaFeatures extension is not installed' );
 			return true;
-		} else if ( self::isFixedHeaderEnabled( $skin->getUser() ) ) {
+		} elseif ( self::isFixedHeaderEnabled( $skin->getUser() ) ) {
 			$data = $tpl->data;
 			$skin = $data['skin'];
 			$nav = $data['content_navigation'];
@@ -152,7 +153,7 @@ class VectorBetaHooks {
 			// Make ajax work
 			$pageActions['watch']['class'] .= ' mw-watchlink';
 			unset( $actions['watch'] );
-		} else if ( isset( $actions['unwatch'] ) ){
+		} elseif ( isset( $actions['unwatch'] ) ){
 			$pageActions['unwatch'] = $actions['unwatch'];
 			// Make ajax work
 			$pageActions['unwatch']['class'] .= ' mw-watchlink';
@@ -222,7 +223,7 @@ class VectorBetaHooks {
 
 		if ( isset( $views['edit'] ) ) {
 			$edit = $views['edit'];
-		} else if ( isset( $views['viewsource'] ) ) {
+		} elseif ( isset( $views['viewsource'] ) ) {
 			$edit = $views['viewsource'];
 		} else {
 			$edit = false;

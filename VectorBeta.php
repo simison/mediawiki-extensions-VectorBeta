@@ -125,7 +125,8 @@ $wgResourceModules = array_merge( $wgResourceModules, array(
 	),
 ) );
 
-$wgHooks['SkinTemplateOutputPageBeforeExec'][] = 'VectorBetaHooks::getSkinTemplateOutputPageBeforeExec';
+$wgHooks['SkinTemplateOutputPageBeforeExec'][] =
+	'VectorBetaHooks::getSkinTemplateOutputPageBeforeExec';
 $wgHooks['GetBetaFeaturePreferences'][] = 'VectorBetaHooks::getPreferences';
 $wgHooks['BeforePageDisplay'][] = 'VectorBetaHooks::onBeforePageDisplay';
 $wgHooks['SkinVectorStyleModules'][] = 'VectorBetaHooks::skinVectorStyleModules';
