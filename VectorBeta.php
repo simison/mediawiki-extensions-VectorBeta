@@ -107,6 +107,7 @@ $wgResourceModules = array_merge( $wgResourceModules, array(
 	'skins.vector.compactPersonalBar' => $wgVBResourceBoilerplate + array(
 		'dependencies' => array(
 			'skins.vector.compactPersonalBar.trackClick',
+			'jquery.accessKeyLabel',
 		),
 		'styles' => array(
 			'resources/compactPersonalBar/compactPersonalBar.less',

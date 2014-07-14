@@ -15,7 +15,8 @@
 			text( options.text ).
 			attr( 'href', options.href ).
 			attr( 'accesskey', options.accesskey ).
-			attr( 'title', options.title );
+			attr( 'title', options.title ).
+			updateTooltipAccessKeys();
 
 		if ( options.count ) {
 			$a.append( $( '<span>' ).text( options.count ) );
@@ -87,15 +88,6 @@
 
 		$a = $( '<a>' ).text( text ).attr( 'href', href );
 		$li = $( '<li>' ).append( $a );
-
-		// copied from mediawiki.util.js
-		if ( tooltip ) {
-			// Trim any existing accesskey hint and the trailing space
-			tooltip = $.trim( tooltip.replace( mw.util.tooltipAccessKeyRegexp, '' ) );
-			if ( accesskey ) {
-				tooltip += ' [' + accesskey + ']';
-			}
-		}
 
 		menu.addItem( 'portlets', null, createItem( {
 			id: id,
