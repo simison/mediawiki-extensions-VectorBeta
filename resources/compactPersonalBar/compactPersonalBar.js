@@ -10,6 +10,18 @@
 
 	var addPortletLinkOld = mw.util.addPortletLink, bar, menu;
 
+	/* After a very long search, I tracked down the code that generates
+	 * the Help link in the sidebar to Skin::addToSidebarPlain. The code
+	 * responsible for this is atrocious and there is absolutely no way
+	 * to reuse it but it basically checks if the message for a given key
+	 * is a URL or a page title, which is what we do here too.
+	 */
+	function urlFromTitleOrUrl( str ) {
+		// FIXME: Use Title::getLinkURL to support interwiki links when
+		// Compact Personal Bar generation is moved to PHP (stable version)
+		return /^(https?:)?\/\//.test(str) ? str : mw.util.getUrl( str );
+	}
+
 	function createItem( options ) {
 		var $a = $( '<a>' ).
 			text( options.text ).
@@ -120,11 +132,11 @@
 			addItem( 'preferences', 'beta', $( '#pt-betafeatures' ) ).
 			addItem( 'info', 'privacy', createItem( {
 				text: mw.msg( 'privacy' ),
-				href: mw.util.getUrl( mw.msg( 'privacypage' ) )
+				href: urlFromTitleOrUrl( mw.msg( 'privacypage' ) )
 			} ) ).
 			addItem( 'info', 'help', createItem( {
 				text: mw.msg( 'help' ),
-				href: mw.util.getUrl( mw.msg( 'helppage' ) )
+				href: urlFromTitleOrUrl( mw.msg( 'helppage' ) )
 			} ) ).
 			addItem( 'end', 'logout', $( '#pt-logout' ) );
 
