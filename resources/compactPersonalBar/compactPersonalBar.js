@@ -119,10 +119,12 @@
 			addItem( 'preferences', 'preferences', $( '#pt-preferences' ) ).
 			addItem( 'preferences', 'beta', $( '#pt-betafeatures' ) ).
 			addItem( 'info', 'privacy', createItem( {
+				id: 'pt-privacy-flyout',
 				text: mw.msg( 'privacy' ),
 				href: mw.util.getUrl( mw.msg( 'privacypage' ) )
 			} ) ).
 			addItem( 'info', 'help', createItem( {
+				id: 'pt-help-flyout',
 				text: mw.msg( 'help' ),
 				href: mw.util.getUrl( mw.msg( 'helppage' ) )
 			} ) ).
