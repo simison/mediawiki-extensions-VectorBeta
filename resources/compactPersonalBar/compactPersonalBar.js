@@ -30,7 +30,7 @@
 			attr( 'title', options.title ).
 			updateTooltipAccessKeys();
 
-		if ( options.count ) {
+		if ( options.count > 0 ) {
 			$a.append( $( '<span>' ).text( options.count ) );
 		}
 
