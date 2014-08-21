@@ -117,7 +117,7 @@ $wgResourceModules = array_merge( $wgResourceModules, array(
 		),
 		'messages' => array(
 			'notifications',
-			'privacy',
+			'vector-beta-compact-personal-bar-privacy',
 			'privacypage',
 			'help',
 			'helppage',

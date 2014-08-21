@@ -132,7 +132,7 @@
 			addItem( 'preferences', 'beta', $( '#pt-betafeatures' ) ).
 			addItem( 'info', 'privacy', createItem( {
 				id: 'pt-privacy-flyout',
-				text: mw.msg( 'privacy' ),
+				text: mw.msg( 'vector-beta-compact-personal-bar-privacy' ),
 				href: urlFromTitleOrUrl( mw.msg( 'privacypage' ) )
 			} ) ).
 			addItem( 'info', 'help', createItem( {

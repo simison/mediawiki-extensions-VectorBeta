@@ -8,5 +8,6 @@
     "vector-beta-feature-compact-personal-bar-message": "Compact personal bar",
     "vector-beta-feature-compact-personal-bar-description": "Clean and organized access to Watchlist, Notifications, and Talk page. A simplified site header with access to tools when you need them.",
     "vector-beta-feature-fixedheader-message": "Fixed header",
-    "vector-beta-feature-fixedheader-description": "Turns the header on the default Vector skin into a fixed header."
+    "vector-beta-feature-fixedheader-description": "Turns the header on the default Vector skin into a fixed header.",
+    "vector-beta-compact-personal-bar-privacy": "Privacy"
 }
