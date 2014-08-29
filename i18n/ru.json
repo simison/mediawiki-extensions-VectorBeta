@@ -10,5 +10,6 @@
 	"vector-beta-feature-compact-personal-bar-message": "Компактная личная панель",
 	"vector-beta-feature-compact-personal-bar-description": "Понятный и упорядоченный доступ к списку наблюдения, уведомлениям и странице обсуждения. Упрощенная «шапка» сайта с доступ к инструментам тогда, когда вы в них нуждаетесь.",
 	"vector-beta-feature-fixedheader-message": "Фиксированная «шапка»",
-	"vector-beta-feature-fixedheader-description": "Превращает заголовок в теме оформления «Векторное» в фиксированный заголовок."
+	"vector-beta-feature-fixedheader-description": "Превращает заголовок в теме оформления «Векторное» в фиксированный заголовок.",
+	"vector-beta-compact-personal-bar-privacy": "Конфиденциальность"
 }

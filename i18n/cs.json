@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Mormegil"
+			"Mormegil",
+			"Mirek2"
 		]
 	},
 	"vector-beta-feature-typography-message": "Oživení typografie",
@@ -10,5 +11,6 @@
 	"vector-beta-feature-compact-personal-bar-message": "Kompaktní osobní nástroje",
 	"vector-beta-feature-compact-personal-bar-description": "Čistý a organizovaný přístup ke sledovaným stránkám, upozorněním a diskusi. Zjednodušená hlavička stránky s přístupem k nástrojům, když je potřebujete.",
 	"vector-beta-feature-fixedheader-message": "Pevné záhlaví",
-	"vector-beta-feature-fixedheader-description": "Změní záhlaví v implicitním stylu Vektor na pevné."
+	"vector-beta-feature-fixedheader-description": "Změní záhlaví v implicitním stylu Vektor na pevné.",
+	"vector-beta-compact-personal-bar-privacy": "Soukromí"
 }

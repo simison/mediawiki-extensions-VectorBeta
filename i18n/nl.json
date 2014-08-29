@@ -11,5 +11,6 @@
 	"vector-beta-feature-compact-personal-bar-message": "Compacte persoonlijke werkbalk",
 	"vector-beta-feature-compact-personal-bar-description": "Schone en georganiseerde toegang tot de volglijst, meldingen en overlegpagina. Een simpele header met toegang tot de hulpmiddelen wanneer deze benodigd zijn.",
 	"vector-beta-feature-fixedheader-message": "Vaste header",
-	"vector-beta-feature-fixedheader-description": "Verandert het horizontale menu van het uiterlijk Vector in een vast menu."
+	"vector-beta-feature-fixedheader-description": "Verandert het horizontale menu van het uiterlijk Vector in een vast menu.",
+	"vector-beta-compact-personal-bar-privacy": "Privacy"
 }
