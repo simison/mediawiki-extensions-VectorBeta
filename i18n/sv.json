@@ -12,5 +12,6 @@
 	"vector-beta-feature-compact-personal-bar-message": "Kompakt personlig verktygslist",
 	"vector-beta-feature-compact-personal-bar-description": "Ren och organiserad åtkomst till bevakningslistan, meddelanden och diskussionssidan. Ett förenklat webbplatshuvud med tillgång till verktyg när du behöver dem.",
 	"vector-beta-feature-fixedheader-message": "Fast sidhuvud",
-	"vector-beta-feature-fixedheader-description": "Gör om sidhuvudet i standard-Vector-utseendet till ett fast sidhuvud."
+	"vector-beta-feature-fixedheader-description": "Gör om sidhuvudet i standard-Vector-utseendet till ett fast sidhuvud.",
+	"vector-beta-compact-personal-bar-privacy": "Integritet"
 }

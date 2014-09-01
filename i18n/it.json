@@ -11,5 +11,6 @@
 	"vector-beta-feature-compact-personal-bar-message": "Compatta barra personale",
 	"vector-beta-feature-compact-personal-bar-description": "Pulisci ed organizza l'accesso agli osservati speciali, alle notifiche e alla pagina di discussione. Un'intestazione del sito semplificata con accesso agli strumenti quando ne hai bisogno.",
 	"vector-beta-feature-fixedheader-message": "Intestazione fissa",
-	"vector-beta-feature-fixedheader-description": "Trasforma l'intestazione nella skin predefinita Vector in un'intestazione fissa."
+	"vector-beta-feature-fixedheader-description": "Trasforma l'intestazione nella skin predefinita Vector in un'intestazione fissa.",
+	"vector-beta-compact-personal-bar-privacy": "Privacy"
 }
