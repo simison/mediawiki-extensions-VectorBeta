@@ -11,5 +11,6 @@
 	"vector-beta-feature-compact-personal-bar-message": "Компактна персональна смуга",
 	"vector-beta-feature-compact-personal-bar-description": "Чітки і організований доступ до списку спостереження, сповіщень та сторінки обговорення. Спрощена шапка сайту з доступом до інструментів, коли вони вам потрібні.",
 	"vector-beta-feature-fixedheader-message": "Фіксована шапка",
-	"vector-beta-feature-fixedheader-description": "Перетворює заголовок теми оформлення «Векторний» у фіксований заголовок."
+	"vector-beta-feature-fixedheader-description": "Перетворює заголовок теми оформлення «Векторний» у фіксований заголовок.",
+	"vector-beta-compact-personal-bar-privacy": "Конфіденційність"
 }
