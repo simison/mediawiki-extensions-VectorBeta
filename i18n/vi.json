@@ -10,5 +10,6 @@
 	"vector-beta-feature-compact-personal-bar-message": "Thu gọn thanh cá nhân",
 	"vector-beta-feature-compact-personal-bar-description": "Truy cập Danh sách theo dõi, các Thông báo, và trang Tin nhắn qua một giao diện sạch sẽ và hợp lý. Đơn giản hóa đầu đề của wiki mà vẫn hiển thị các công cụ khi nào cần.",
 	"vector-beta-feature-fixedheader-message": "Đầu đề cố định",
-	"vector-beta-feature-fixedheader-description": "Cố định đầu trang khi cuộn trang trong giao diện mặc định Vectơ."
+	"vector-beta-feature-fixedheader-description": "Cố định đầu trang khi cuộn trang trong giao diện mặc định Vectơ.",
+	"vector-beta-compact-personal-bar-privacy": "Riêng tư"
 }
