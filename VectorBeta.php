@@ -131,5 +131,4 @@ $wgHooks['SkinTemplateOutputPageBeforeExec'][] =
 $wgHooks['GetBetaFeaturePreferences'][] = 'VectorBetaHooks::getPreferences';
 $wgHooks['BeforePageDisplay'][] = 'VectorBetaHooks::onBeforePageDisplay';
 $wgHooks['SkinVectorStyleModules'][] = 'VectorBetaHooks::skinVectorStyleModules';
-$wgHooks['BeforePageDisplay'][] = 'VectorBetaHooks::onBeforePageDisplay';
 $wgHooks['ResourceLoaderRegisterModules'][] = 'VectorBetaHooks::onResourceLoaderRegisterModules';
