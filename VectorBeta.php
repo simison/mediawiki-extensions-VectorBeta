@@ -47,6 +47,11 @@ $wgVectorBetaWinter = false;
  */
 $wgVectorBetaTypography = false;
 
+/**
+ * Enable form refresh / ui standardization experiment
+ */
+$wgVectorBetaFormRefresh = false;
+
 $wgAutoloadClasses['VectorBetaHooks'] = __DIR__ . '/VectorBeta.hooks.php';
 
 $wgMessagesDirs['VectorBeta'] = __DIR__ . '/i18n';
@@ -132,3 +137,4 @@ $wgHooks['GetBetaFeaturePreferences'][] = 'VectorBetaHooks::getPreferences';
 $wgHooks['BeforePageDisplay'][] = 'VectorBetaHooks::onBeforePageDisplay';
 $wgHooks['SkinVectorStyleModules'][] = 'VectorBetaHooks::skinVectorStyleModules';
 $wgHooks['ResourceLoaderRegisterModules'][] = 'VectorBetaHooks::onResourceLoaderRegisterModules';
+$wgHooks['RequestContextCreateSkin'][] = 'VectorBetaHooks::onRequestContextCreateSkin';

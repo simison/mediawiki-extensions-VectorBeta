@@ -53,6 +53,37 @@ class VectorBetaHooks {
 	}
 
 	/**
+	 * RequestContextCreateSkin hook handler
+	 * @see https://www.mediawiki.org/wiki/Manual:Hooks/RequestContextCreateSkin
+	 *
+	 * @param IContextSource $ctx
+	 * @param Skin $skin
+	 * @return bool
+	 */
+	public static function onRequestContextCreateSkin( $ctx, $skin ) {
+		global $wgUseMediaWikiUIEverywhere;
+
+		if ( self::isFormRefreshEnabled( $ctx->getUser() ) ) {
+			// Turn on MediaWiki UI styles so special pages with forms are styled.
+			// FIXME: Remove when this becomes default.
+			$wgUseMediaWikiUIEverywhere = true;
+		}
+
+		return true;
+	}
+
+	/**
+	 * Checks whether form refresh experiment can be run or not
+	 * @param User $user
+	 * @return bool
+	 */
+	static function isFormRefreshEnabled( $user ) {
+		global $wgVectorBetaFormRefresh;
+		return $wgVectorBetaFormRefresh &&
+			BetaFeatures::isFeatureEnabled( $user, 'betafeatures-vector-form-refresh' );
+	}
+
+	/**
 	 * Checks whether fixed header experiment can be run or not
 	 * @param User $user
 	 * @return bool
@@ -251,7 +282,7 @@ class VectorBetaHooks {
 
 	static function getPreferences( $user, &$prefs ) {
 		global $wgExtensionAssetsPath, $wgVectorBetaPersonalBar,
-			$wgVectorBetaTypography, $wgVectorBetaWinter;
+			$wgVectorBetaTypography, $wgVectorBetaWinter, $wgVectorBetaFormRefresh;
 
 		if ( $wgVectorBetaTypography ) {
 			$prefs['betafeatures-vector-typography-update'] = array(
@@ -264,6 +295,22 @@ class VectorBetaHooks {
 					'rtl' => $wgExtensionAssetsPath . '/VectorBeta/typography-beta-arab.svg',
 					'he' => $wgExtensionAssetsPath . '/VectorBeta/typography-beta-hebr.svg',
 					'yi' => $wgExtensionAssetsPath . '/VectorBeta/typography-beta-hebr.svg',
+				),
+				'requirements' => array(
+					'skins' => array( 'vector' ),
+				),
+			);
+		}
+
+		if ( $wgVectorBetaFormRefresh ) {
+			$prefs['betafeatures-vector-form-refresh'] = array(
+				'label-message' => 'vector-beta-feature-form-refresh-message',
+				'desc-message' => 'vector-beta-feature-form-refresh-description',
+				'info-link' => 'https://www.mediawiki.org/wiki/MediaWiki_UI',
+				'discussion-link' => 'https://www.mediawiki.org/wiki/Talk:MediaWiki_UI',
+				'screenshot' => array (
+					'ltr' => $wgExtensionAssetsPath . '/VectorBeta/form-refresh-beta.svg',
+					'rtl' => $wgExtensionAssetsPath . '/VectorBeta/form-refresh-beta-rtl.svg',
 				),
 				'requirements' => array(
 					'skins' => array( 'vector' ),
