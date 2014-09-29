@@ -137,4 +137,4 @@ $wgHooks['GetBetaFeaturePreferences'][] = 'VectorBetaHooks::getPreferences';
 $wgHooks['BeforePageDisplay'][] = 'VectorBetaHooks::onBeforePageDisplay';
 $wgHooks['SkinVectorStyleModules'][] = 'VectorBetaHooks::skinVectorStyleModules';
 $wgHooks['ResourceLoaderRegisterModules'][] = 'VectorBetaHooks::onResourceLoaderRegisterModules';
-$wgHooks['RequestContextCreateSkin'][] = 'VectorBetaHooks::onRequestContextCreateSkin';
+$wgHooks['MediaWikiPerformAction'][] = 'VectorBetaHooks::onMediaWikiPerformAction';

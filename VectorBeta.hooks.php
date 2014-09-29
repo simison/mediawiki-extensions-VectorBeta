@@ -54,16 +54,20 @@ class VectorBetaHooks {
 
 	/**
 	 * RequestContextCreateSkin hook handler
-	 * @see https://www.mediawiki.org/wiki/Manual:Hooks/RequestContextCreateSkin
+	 * @see https://www.mediawiki.org/wiki/Manual:Hooks/MediaWikiPerformAction
 	 *
-	 * @param IContextSource $ctx
-	 * @param Skin $skin
+	 * @param $output
+	 * @param $article
+	 * @param $title
+	 * @param $user
+	 * @param $request
+	 * @param $wiki
 	 * @return bool
 	 */
-	public static function onRequestContextCreateSkin( $ctx, $skin ) {
+	public static function onMediaWikiPerformAction( $output, $article, $title, $user, $request, $wiki ) {
 		global $wgUseMediaWikiUIEverywhere;
 
-		if ( self::isFormRefreshEnabled( $ctx->getUser() ) ) {
+		if ( self::isFormRefreshEnabled( $user ) ) {
 			// Turn on MediaWiki UI styles so special pages with forms are styled.
 			// FIXME: Remove when this becomes default.
 			$wgUseMediaWikiUIEverywhere = true;
