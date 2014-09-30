@@ -5,7 +5,8 @@
 			"Ty221",
 			"WTM",
 			"Peter Bowman",
-			"Chrumps"
+			"Chrumps",
+			"Darellur"
 		]
 	},
 	"vector-beta-feature-typography-message": "Odświeżona typografia",
@@ -14,5 +15,6 @@
 	"vector-beta-feature-compact-personal-bar-message": "Kompaktowy pasek osobisty",
 	"vector-beta-feature-compact-personal-bar-description": "Przejrzysty i zorganizowany dostęp do Listy obserwowanych, Powiadomień oraz Strony dyskusji. Uproszczony nagłówek ułatwiający dostęp do narzędzi, gdy ich potrzebujesz.",
 	"vector-beta-feature-fixedheader-message": "Stały nagłówek",
+	"vector-beta-feature-form-refresh-message": "Aktualizacja i standaryzacja interfejsu",
 	"vector-beta-compact-personal-bar-privacy": "Prywatność"
 }
