@@ -54,6 +54,19 @@ class VectorBetaHooks {
 
 	/**
 	 * RequestContextCreateSkin hook handler
+	 * @see https://www.mediawiki.org/wiki/Manual:Hooks/RequestContextCreateSkin
+	 *
+	 * @param IContextSource $ctx
+	 * @param Skin $skin
+	 * @return bool
+	 */
+	public static function onRequestContextCreateSkin( $ctx, $skin ) {
+		self::enableMediaWikiUIEverywhere( $ctx->getUser() );
+		return true;
+	}
+
+	/**
+	 * MediaWikiPerformAction hook handler
 	 * @see https://www.mediawiki.org/wiki/Manual:Hooks/MediaWikiPerformAction
 	 *
 	 * @param $output
@@ -65,6 +78,19 @@ class VectorBetaHooks {
 	 * @return bool
 	 */
 	public static function onMediaWikiPerformAction( $output, $article, $title, $user, $request, $wiki ) {
+		self::enableMediaWikiUIEverywhere( $user );
+		return true;
+	}
+
+
+	/**
+	 * Set $wgUseMediaWikiUIEverywhere to true is the user
+	 * has the form refresh beta feature enabled.
+	 *
+	 * @param $user
+	 * @return bool
+	 */
+	static function enableMediaWikiUIEverywhere( $user ) {
 		global $wgUseMediaWikiUIEverywhere;
 
 		if ( self::isFormRefreshEnabled( $user ) ) {
