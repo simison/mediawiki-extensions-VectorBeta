@@ -15,5 +15,6 @@
 	"vector-beta-feature-fixedheader-message": "固定页眉",
 	"vector-beta-feature-fixedheader-description": "在默认的Vector皮肤中启用固定页眉。",
 	"vector-beta-feature-form-refresh-message": "界面更新和标准化",
+	"vector-beta-feature-form-refresh-description": "用于网站基本控制更新的外观和感觉，控件将逐渐覆盖。启用此功能后您不仅可以帮助提供新外观的反馈，还可以确定看起来不是很正确的地方。",
 	"vector-beta-compact-personal-bar-privacy": "隐私"
 }
