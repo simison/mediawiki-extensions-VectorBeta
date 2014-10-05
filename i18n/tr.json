@@ -4,7 +4,8 @@
 			"Meelo",
 			"SiLveRLeaD",
 			"Incelemeelemani",
-			"Sayginer"
+			"Sayginer",
+			"Violetanka"
 		]
 	},
 	"vector-beta-feature-typography-message": "Baskı (tipografi) yenileme",
@@ -14,5 +15,7 @@
 	"vector-beta-feature-compact-personal-bar-description": "İzleme listesine, Bildirimlere ve Tartışma sayfasına temiz ve düzenli bir erişim. Gerektiğinde bu alanlara erişim ve basitleştirilmiş site üst bilgisi.",
 	"vector-beta-feature-fixedheader-message": "Sabit üst bilgi",
 	"vector-beta-feature-fixedheader-description": "Sabit üst bilgi, varsayılan olarak Vector teması ile açılır.",
+	"vector-beta-feature-form-refresh-message": "Arayüz yenilemesi ve standart hale getirme",
+	"vector-beta-feature-form-refresh-description": "Sitede temel kontroller için güncel görünümü kullanın. Kontroller zamanla değiştirilecektir. Bu özelliğin kullanılması için yetki verdiğinizde yeni görünüm hakkında geri dönüt sağlayabilir, aynı zamanda sorunlu değişiklikleri de bize bildirebilirsiniz.",
 	"vector-beta-compact-personal-bar-privacy": "Gizlilik"
 }
