@@ -112,19 +112,20 @@
 	};
 
 	$( function() {
-		var $barContainer = $( '#p-personal' );
+		var $barContainer = $( '#p-personal' ),
+			$notifications = createItem( {
+				id: 'pt-notifications-flyout',
+				text: mw.msg( 'notifications' ),
+				count: $( '#pt-notifications' ).text(),
+				href: $( '#pt-notifications' ).find( 'a' ).attr( 'href' )
+			} );
 
 		menu.
 			addItem( 'heading', 'user-page', $( '#pt-userpage' ).find( 'a' ) ).
 			addItem( 'interactions', 'contributions', $( '#pt-mycontris' ) ).
 			// notifications item can't be simply cloned, markup has to be changed
 			// and label added
-			addItem( 'interactions', 'notifications', createItem( {
-				id: 'pt-notifications-flyout',
-				text: mw.msg( 'notifications' ),
-				count: $( '#pt-notifications' ).text(),
-				href: $( '#pt-notifications' ).find( 'a' ).attr( 'href' )
-			} ) ).
+			addItem( 'interactions', 'notifications', $notifications ).
 			addItem( 'interactions', 'newmessages', $( '#pt-newmessages' ).clone().attr( 'id', 'pt-newmessages-flyout' ) ).
 			addItem( 'interactions', 'talk', $( '#pt-mytalk' ).clone().attr( 'id', 'pt-mytalk-flyout' ) ).
 			addItem( 'interactions', 'watchlist', $( '#pt-watchlist' ).clone().attr( 'id', 'pt-watchlist-flyout' ) ).
@@ -156,6 +157,14 @@
 		setTimeout( function() {
 			$barContainer.append( bar.$el );
 		}, 0 );
+
+		mw.hook( 'ext.echo.updateNotificationCount' ).add( function ( updateCount ) {
+			if ( updateCount !== 0 ) {
+				$notifications.find( 'span' ).show().text( updateCount );
+			} else {
+				$notifications.find( 'span' ).hide();
+			}
+		} );
 	} );
 
 }( mediaWiki, jQuery ) );
