@@ -13,9 +13,6 @@
 			"i18n"
 		]
 	},
-	"ExtensionMessagesFiles": {
-		"VectorBeta": "VectorBeta.i18n.php"
-	},
 	"AutoloadClasses": {
 		"VectorBetaHooks": "VectorBeta.hooks.php"
 	},
