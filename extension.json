@@ -23,6 +23,7 @@
 			]
 		},
 		"skins.vector.header.beta": {
+			"position": "top",
 			"styles": [
 				"resources/fixedHeader/header.less",
 				"resources/fixedHeader/page-actions.less",
