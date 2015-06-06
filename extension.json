@@ -116,5 +116,6 @@
 		"VectorBetaWinter": false,
 		"VectorBetaTypography": false,
 		"VectorBetaFormRefresh": false
-	}
+	},
+	"manifest_version": 1
 }
