@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Shirayuki",
-			"Fryed-peach"
+			"Fryed-peach",
+			"Otokoume"
 		]
 	},
 	"vector-beta-feature-typography-message": "文字体裁の更新",
@@ -12,5 +13,6 @@
 	"vector-beta-feature-compact-personal-bar-description": "すっきりと整理された、ウォッチリストや通知、会話ページへのアクセス。必要な時にツールへとアクセスできる簡素化されたサイトヘッダー。",
 	"vector-beta-feature-fixedheader-message": "固定ヘッダー",
 	"vector-beta-feature-fixedheader-description": "既定のベクター外装のヘッダーを固定式ヘッダーに変える。",
+	"vector-beta-feature-form-refresh-message": "インターフェースの更新と標準化",
 	"vector-beta-compact-personal-bar-privacy": "プライバシー"
 }
